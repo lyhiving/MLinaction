@@ -4,7 +4,7 @@ import sys
 
 ## logistic函数是要寻找一种最佳拟合方法，这一点与线性方程非常类似
 ## 但它使用了梯度下降法来最快速地寻找数据
-## 这使得它对多参数的二分分类比较适合
+## 这使得它对多参数的二分类比较适合
 class logistic:
 
 	def loadDataSet(self):
@@ -102,6 +102,7 @@ class logistic:
 		if prob > 0.5: return 1.0
 		else: return 0.0
 
+	##-----------------------------------------------------------------
 	def colicTest(self):
 		frTrain = open('data/logistic/horseColicTraining.txt')
 		frTest = open('data/logistic/horseColicTest.txt')
@@ -139,15 +140,17 @@ class logistic:
 
 if __name__ == "__main__":
 	logic = logistic()
+	## 加载数据
 	dataArr, labelMat = logic.loadDataSet()
+	## 根据梯度下降法来计算拟合参数
 	weights = logic.gradAscent(dataArr, labelMat)
-	#logic.plotBestfit(weights)
-
+	logic.plotBestfit(weights)
+	## 根据随机梯度下降法来计算最佳拟合参数，由于只重复200次，因此效果不会比上面的500次更好
 	weights = logic.stocGradAscent0(array(dataArr), labelMat)
-	#logic.plotBestfit(weights)
-
+	logic.plotBestfit(weights)
+	## 改进随机梯度，同样200次效果更好
 	weights = logic.stocGradAscent1(array(dataArr), labelMat, 200)
-	#logic.plotBestfit(weights)
+	logic.plotBestfit(weights)
 
-	##
+	## 从文本文件中读取数据并进行多次测试，计算平均错误率
 	logic.multiTest()

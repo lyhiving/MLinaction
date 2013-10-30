@@ -81,10 +81,10 @@ class bayesian:
 		## 测试不同字符串的后验概率
 		testEntry = ['love', 'my', 'dalmation']
 		thisDoc = array(self.setOfWords2Vec(myVocabList, testEntry))
-		print testEntry, 'classified as: ', self.classifyNB(thisDoc, p0V, p1V, pAb)
+		print testEntry, '被分类为: ', self.classifyNB(thisDoc, p0V, p1V, pAb)
 		testEntry = ['stupid', 'garbage']
 		thisDoc = array(self.setOfWords2Vec(myVocabList, testEntry))
-		print testEntry, 'classified as: ', self.classifyNB(thisDoc, p0V, p1V, pAb)
+		print testEntry, '被分类为: ', self.classifyNB(thisDoc, p0V, p1V, pAb)
 
 ## 电子邮件测试器
 class emailClassfier:
@@ -125,33 +125,37 @@ class emailClassfier:
 			wordVector = bayesian.setOfWords2Vec(vocabList, docList[docIndex])
 			if bayesian.classifyNB(array(wordVector), p0V, p1V, pSpam) != classList[docIndex]:
 				errorCount += 1
-				print "classification error", docList[docIndex]
-		print 'the error rate is: ', float(errorCount) / len(testSet)
+				print "分类错误", docList[docIndex]
+		print '错误率是: ', float(errorCount) / len(testSet)
 		#return vocabList,fullText
 
 
-
-
-
+## 这个代码展示了Bayesian分类给基本过程
+## 贝叶斯分类适用于文本分类，通过构造bag of words的方式来实现
 if __name__ == "__main__":
 	reload(sys)                         # 2
 	sys.setdefaultencoding('utf-8')
 	type = sys.getfilesystemencoding()
-
+	## 加载数据
 	bayesian = bayesian()
 	listOPosts, listClasses = bayesian.loadDataSet()
+	## 将数据转化为词袋
 	myVocaList = bayesian.createVocabList(listOPosts)
 	print myVocaList
 	print bayesian.setOfWords2Vec(myVocaList, listOPosts[0])
+	## 将两个类型的数据转化为词汇矢量，其值为词汇在文本中的出现次数
 	trainMat = []
 	for postinDoc in listOPosts:
 		trainMat.append(bayesian.setOfWords2Vec(myVocaList, postinDoc))
 
+	## 测试先验概率
 	p0V, p1V, pAb = bayesian.trainNB0(trainMat, listClasses)
 	print p0V
 	print p1V
 	print pAb
+	## 测试后验概率值
 	bayesian.testingNB()
 
+	## 用一堆文本进行分类测试
 	email = emailClassfier()
 	email.spamTest(bayesian)

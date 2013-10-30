@@ -127,6 +127,7 @@ class RSSClassifier:
 
 	def SingleClassifier(self):
 		## 加载RSS源并将其保存为文本文件
+		## 除非是生成新数据，否则不执行这段代码
 		#juns_count = rss.loadRSS('http://mil.sohu.com/rss/junshi.xml','data/bayesian/rss/rss_junshi.txt')
 		#tiyu_count = rss.loadRSS('http://rss.news.sohu.com/rss/sports.xml','data/bayesian/rss/rss_tiyu.txt' )
 		#print juns_count
@@ -202,5 +203,7 @@ if __name__ == "__main__":
 	type = sys.getfilesystemencoding()
 
 	rss = RSSClassifier()
+	## 单条RSS内容分类
 	#rss.SingleClassifier()
+	## 从样本集中挑选部分进行分类
 	rss.crossValidClassifier()
