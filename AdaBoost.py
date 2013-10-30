@@ -187,11 +187,7 @@ class AdaBoost:
 		plot_colors = "br"
 		plot_step = 0.02
 		class_names = "AB"
-		for i, n, c in zip(range(2), class_names, plot_colors):
-			idx = np.where(y == i)
-			pl.scatter(X[i, 0], X[i, 1],
-						c=c, cmap=pl.cm.Paired,
-						label="Class %s" % n)
+
 
 
 		pl.legend(loc='upper right')

@@ -62,8 +62,8 @@ if __name__ == "__main__":
 	from sklearn import tree
 	clf = tree.DecisionTreeClassifier()
 	clf = clf.fit(dataMat, labels)
-	#print clf.predict([2,0])
-	print clf
+	print clf.predict([2,0,0,1])
+	#print clf
 
 	## 将决策结果输出为PDF
 	from sklearn.externals.six import StringIO
@@ -72,4 +72,5 @@ if __name__ == "__main__":
 	tree.export_graphviz(clf, out_file=dot_data)
 	graph = pydot.graph_from_dot_data(dot_data.getvalue())
 	graph.write_pdf("data/dt/dt.pdf")
+	print "输出PDF成功"
 
