@@ -233,6 +233,7 @@ class svmlib:
 			trainingMat[i,:] = self.img2vector('%s/%s' % (dirName, fileNameStr))
 		return trainingMat, hwLabels
 
+	## ------------------------------------------------------------------------------
 	## 线性分类器
 	def testLinear(self):
 		## 加载数据
@@ -261,6 +262,7 @@ class svmlib:
 		## SVM分类器是个二元分类器，其结果为-1或1
 		## 因此训练时，训练集的值也为-1或1
 		print '-----------------'
+		## 根据SVM判断第4个数据的分类，大于0为1，小于0为-1
 		print dataMat[3]*mat(ws)+b, labelArr[3]
 
 	## rbf核函数分类器

@@ -180,6 +180,9 @@ if __name__ == "__main__":
 	normMat, ranges, minVals = knn.autoNorm(datingDataMat)
 	## 数据可视化
 	#knn.show3DTest(normMat, datingLabels)
+	## 普通KNN
 	knn.datingClassTest()
+	## SCIKIT的KNN
 	knn.datingClassTest2()
+	## 测试笔迹
 	knn.handwritingClassTest()

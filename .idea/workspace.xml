@@ -2,29 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c56946a-0648-46c2-920a-afae2bbee770" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bayesian.py" afterPath="$PROJECT_DIR$/Bayesian.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/kmean/Portland.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KMean.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Regression.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/reg/abalone.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/reg/ex0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/reg/ex1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/kmean/places.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/kmean/portlandClubs.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/kmean/testSet.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/kmean/testSet2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdaBoost.py" afterPath="$PROJECT_DIR$/AdaBoost.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KNN.py" afterPath="$PROJECT_DIR$/KNN.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logistic.py" afterPath="$PROJECT_DIR$/Logistic.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RSSClassifier.py" afterPath="$PROJECT_DIR$/RSSClassifier.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SVM.py" afterPath="$PROJECT_DIR$/SVM.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SVM_Scikit.py" afterPath="$PROJECT_DIR$/SVM_Scikit.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MLinaction.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/KNN.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383129207736" ignored="false" />
+    <file path="/KNN.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383139983570" ignored="false" />
     <file path="/DecisionTree.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383129330118" ignored="false" />
     <file path="/Bayesian.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383138651191" ignored="false" />
     <file path="/test.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383039031255" ignored="false" />
     <file path="/userdict" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383033049794" ignored="false" />
     <file path="/a.dummy" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383033654449" ignored="false" />
-    <file path="/RSSClassifier.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383138757208" ignored="false" />
-    <file path="/Logistic.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383139209980" ignored="false" />
-    <file path="/SVM.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383097724228" ignored="false" />
+    <file path="/RSSClassifier.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383141754459" ignored="false" />
+    <file path="/Logistic.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383139927688" ignored="false" />
+    <file path="/SVM.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383142015130" ignored="false" />
     <file path="/SVM_Scikit.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383100281835" ignored="false" />
     <file path="/testSet.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383100199830" ignored="false" />
-    <file path="/AdaBoost.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383112377513" ignored="false" />
+    <file path="/AdaBoost.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383142344612" ignored="false" />
     <file path="/README.md" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383118116952" ignored="false" />
-    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383138327092" ignored="false" />
+    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383141858162" ignored="false" />
+    <file path="/Regression.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383147398633" ignored="false" />
+    <file path="/KMean.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383149620764" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +57,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Logistic.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Logistic.py">
+      <file leaf-file-name="KMean.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/KMean.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="4" selection-start="4767" selection-end="4767" vertical-scroll-proportion="0.76863754">
-              <folding>
-                <element signature="e#24#43#0" expanded="true" />
-              </folding>
+            <state line="25" column="20" selection-start="897" selection-end="897" vertical-scroll-proportion="0.38303342">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,27 +84,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/data/dt/lenses.txt" />
         <option value="$PROJECT_DIR$/lib/chinesestopwords.txt" />
         <option value="$PROJECT_DIR$/lib/userdict" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/data/svm/horseColicTest.txt" />
-        <option value="$PROJECT_DIR$/SVM.py" />
         <option value="$PROJECT_DIR$/data/svm/testSet.txt" />
-        <option value="$PROJECT_DIR$/SVM_Scikit.py" />
-        <option value="$PROJECT_DIR$/AdaBoost.py" />
-        <option value="$PROJECT_DIR$/KNN.py" />
         <option value="$PROJECT_DIR$/DecisionTree.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Bayesian.py" />
-        <option value="$PROJECT_DIR$/RSSClassifier.py" />
         <option value="$PROJECT_DIR$/Logistic.py" />
+        <option value="$PROJECT_DIR$/KNN.py" />
+        <option value="$PROJECT_DIR$/RSSClassifier.py" />
+        <option value="$PROJECT_DIR$/SVM.py" />
+        <option value="$PROJECT_DIR$/SVM_Scikit.py" />
+        <option value="$PROJECT_DIR$/AdaBoost.py" />
+        <option value="$PROJECT_DIR$/Regression.py" />
+        <option value="$PROJECT_DIR$/KMean.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="28" />
+    <option name="x" value="224" />
+    <option name="y" value="34" />
     <option name="width" value="1420" />
     <option name="height" value="792" />
   </component>
@@ -155,24 +167,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
@@ -220,11 +214,11 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.Python" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.sourceCode.Python" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -243,12 +237,15 @@
       <recent name="$PROJECT_DIR$/data/bayesian" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/kmean" />
+      <recent name="$PROJECT_DIR$/data/reg" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/data/knn" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Logistic">
-    <configuration default="false" name="KNN" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.KMean">
+    <configuration default="false" name="SVM" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -261,7 +258,64 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MLinaction" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KNN.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SVM.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SVM_Scikit" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MLinaction" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SVM_Scikit.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AdaBoost" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MLinaction" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdaBoost.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MLinaction" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Regression.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -269,7 +323,7 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="DecisionTree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="KMean" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -282,66 +336,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MLinaction" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DecisionTree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KMean.py" />
       <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Bayesian" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MLinaction" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Bayesian.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="RSSClassifier" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MLinaction" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RSSClassifier.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Logistic" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MLinaction" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Logistic.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -405,19 +404,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.KNN" />
-      <item index="1" class="java.lang.String" itemvalue="Python.DecisionTree" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Bayesian" />
-      <item index="3" class="java.lang.String" itemvalue="Python.RSSClassifier" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Logistic" />
+      <item index="0" class="java.lang.String" itemvalue="Python.SVM" />
+      <item index="1" class="java.lang.String" itemvalue="Python.SVM_Scikit" />
+      <item index="2" class="java.lang.String" itemvalue="Python.AdaBoost" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Regression" />
+      <item index="4" class="java.lang.String" itemvalue="Python.KMean" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Logistic" />
-        <item index="1" class="java.lang.String" itemvalue="Python.RSSClassifier" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Bayesian" />
-        <item index="3" class="java.lang.String" itemvalue="Python.DecisionTree" />
-        <item index="4" class="java.lang.String" itemvalue="Python.KNN" />
+        <item index="0" class="java.lang.String" itemvalue="Python.KMean" />
+        <item index="1" class="java.lang.String" itemvalue="Python.SVM_Scikit" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Regression" />
+        <item index="3" class="java.lang.String" itemvalue="Python.AdaBoost" />
+        <item index="4" class="java.lang.String" itemvalue="Python.SVM" />
       </list>
     </recent_temporary>
   </component>
@@ -468,24 +467,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="28" width="1420" height="792" extended-state="0" />
+    <frame x="224" y="34" width="1420" height="792" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2176128" sideWeight="0.61869437" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1477438" sideWeight="0.61869437" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38392857" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2176128" sideWeight="0.61869437" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14701602" sideWeight="0.61869437" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38130563" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1477438" sideWeight="0.27596438" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38130563" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38130563" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886904" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -550,131 +549,144 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="66" />
+      <option name="time" value="77" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/adaboost/horseColicTest2.txt">
+    <entry file="file://$PROJECT_DIR$/data/svm/testSetRBF.txt">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/svm/testSet.txt">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="275" selection-end="293" vertical-scroll-proportion="-0.12465374" />
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/sklearn/tree/tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="281" column="0" selection-start="10637" selection-end="10637" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_Scikit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="766" selection-end="798" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="uml://Python/KNN.KNNDemo">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Python</ID>
-          <OriginalElement>KNN.KNNDemo</OriginalElement>
-          <nodes>
-            <node x="" y="">KNN.KNNDemo</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="19.0" y="15.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Methods</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm20/python_stubs/596071422/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4986" column="8" selection-start="169686" selection-end="169686" vertical-scroll-proportion="0.3316062" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="30" selection-start="6386" selection-end="6386" vertical-scroll-proportion="1.6201551" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AdaBoost.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="24" selection-start="6862" selection-end="6862" vertical-scroll-proportion="0.46770027" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/knn/datingTestSet2.txt">
+    <entry file="file://$PROJECT_DIR$/data/svm/horseColicTest.txt">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="33" selection-start="315" selection-end="315" vertical-scroll-proportion="-0.25" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/knn/datingTestSet.txt">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dt/lenses.txt">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="11" selection-start="229" selection-end="229" vertical-scroll-proportion="0.3018576">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.037037037">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Bayesian.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="30" selection-start="2771" selection-end="2771" vertical-scroll-proportion="0.30591258">
+        <state line="89" column="20" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.50642675">
           <folding>
             <element signature="e#24#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DecisionTree.py">
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/traceback.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="17" selection-start="843" selection-end="843" vertical-scroll-proportion="0.75578403">
+        <state line="66" column="43" selection-start="2385" selection-end="2385" vertical-scroll-proportion="0.33161953">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/reg/ex0.txt">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/reg/ex1.txt">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="0" selection-start="3458" selection-end="3484" vertical-scroll-proportion="0.6143959">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/reg/abalone.txt">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="47" selection-end="90" vertical-scroll-proportion="0.041436464">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1123" column="0" selection-start="46950" selection-end="46950" vertical-scroll-proportion="1.1303191">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM_Scikit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="34" selection-start="2022" selection-end="2022" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#24#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="263" column="33" selection-start="10102" selection-end="10102" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RSSClassifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="28" selection-start="6059" selection-end="6059" vertical-scroll-proportion="0.8097686">
-          <folding />
+        <state line="226" column="28" selection-start="7583" selection-end="7583" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#5655#7081#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logistic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="4" selection-start="4767" selection-end="4767" vertical-scroll-proportion="0.76863754">
+        <state line="153" column="0" selection-start="4738" selection-end="4738" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#24#43#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="186" column="11" selection-start="6392" selection-end="6392" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#41#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AdaBoost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="24" selection-start="6609" selection-end="6625" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KMean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="20" selection-start="897" selection-end="897" vertical-scroll-proportion="0.38303342">
+          <folding />
         </state>
       </provider>
     </entry>

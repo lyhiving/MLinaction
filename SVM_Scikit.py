@@ -58,15 +58,12 @@ if __name__ == "__main__":
 		# point in the mesh [x_min, m_max]x[y_min, y_max].
 		pl.subplot(2, 2, i + 1)
 		Z = clf.predict(np.c_[xx.ravel(), yy.ravel()])
-
 		# Put the result into a color plot
 		Z = Z.reshape(xx.shape)
 		pl.contourf(xx, yy, Z, cmap=pl.cm.Paired)
 		pl.axis('off')
-
 		# Plot also the training points
 		pl.scatter(X[:, 0], X[:, 1], c=Y, cmap=pl.cm.Paired)
-
 		pl.title(titles[i])
 
 	pl.show()

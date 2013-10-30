@@ -125,6 +125,21 @@ class RSSClassifier:
 		else:
 			return 0
 
+	def loadProcessedData(self):
+		dataMat0,labels0 = self.preProcess('data/bayesian/rss/rss_junshi.txt',0)
+		dataMat1,labels1 = self.preProcess('data/bayesian/rss/rss_tiyu.txt',1)
+		dataMat = dataMat0 + dataMat1
+		labels = labels0 + labels1
+		print dataMat
+		print labels
+
+		myVocabList = self.createVocabList(dataMat)
+		## 建立bag of words 矩阵
+		trainMat = []
+		for postinDoc in dataMat:
+			trainMat.append(self.setOfWords2Vec(myVocabList, postinDoc))
+		return myVocabList, trainMat, labels
+
 	def SingleClassifier(self):
 		## 加载RSS源并将其保存为文本文件
 		## 除非是生成新数据，否则不执行这段代码
@@ -154,7 +169,6 @@ class RSSClassifier:
 		thisDoc = array(self.setOfWords2Vec(myVocabList, testEntry))
 		clabels = ['军事','体育']
 		print testText, 'classified as: ', self.classifyNB(thisDoc, p0V, p1V, pAb, clabels)
-
 
 	## 交叉分类验证
 	## 从51个样本中选出41个培训集，10个测试集
@@ -196,6 +210,23 @@ class RSSClassifier:
 				print "---------------------------------------"
 		print 'the error rate is: ', float(errorCount) / len(testSet)
 
+	## 使用scikti代码进行GaussianNB训练
+	def scikitNBClassfier(self):
+		myVocabList, trainMat, trainClasses = rss.loadProcessedData()
+		from sklearn.naive_bayes import GaussianNB
+		gnb = GaussianNB()
+		X = array(trainMat)
+		y = trainClasses
+
+		testText = "美国军队的军舰今天访问了巴西港口城市，并首次展示了核潜艇攻击能力，飞机，监听。他们表演了足球。"
+		testEntry = rss.testEntryProcess(testText)
+		thisDoc = array(rss.setOfWords2Vec(myVocabList, testEntry))
+		## 拟合并预测
+		y_pred = gnb.fit(X, y).predict(thisDoc)
+		clabels = ['军事','体育']
+		print clabels[y_pred]
+		y_pred = gnb.fit(X, y).predict(X)
+		print("Number of mislabeled points : %d" % (trainClasses != y_pred).sum())
 
 if __name__ == "__main__":
 	reload(sys)                         # 2
@@ -206,4 +237,11 @@ if __name__ == "__main__":
 	## 单条RSS内容分类
 	#rss.SingleClassifier()
 	## 从样本集中挑选部分进行分类
-	rss.crossValidClassifier()
+	##rss.crossValidClassifier()
+	## SCIKIT
+	rss.scikitNBClassfier()
+
+
+
+
+

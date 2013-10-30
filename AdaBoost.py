@@ -159,7 +159,6 @@ class AdaBoost:
 		bdt = AdaBoostClassifier(DecisionTreeClassifier(max_depth=1),
 								algorithm="SAMME",
 								n_estimators=200)
-
 		bdt.fit(X, y)
 
 		plot_colors = "br"
@@ -173,23 +172,16 @@ class AdaBoost:
 		xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
 						np.arange(y_min, y_max, h))
 
-		# title for the plots
-		titles = ['SVC with linear kernel',
-				'SVC with RBF kernel',
-				'SVC with polynomial (degree 3) kernel',
-				'LinearSVC (linear kernel)']
-
 		Z = bdt.predict(np.c_[xx.ravel(), yy.ravel()])
 		Z = Z.reshape(xx.shape)
 		cs = pl.contourf(xx, yy, Z, cmap=pl.cm.Paired)
+
 		pl.axis("tight")
 		# Plot the training points
 		plot_colors = "br"
 		plot_step = 0.02
 		class_names = "AB"
-
-
-
+		pl.scatter(X[:, 0], X[:, 1], c=y, cmap=pl.cm.Paired)
 		pl.legend(loc='upper right')
 		pl.xlabel("Decision Boundary")
 		pl.show()

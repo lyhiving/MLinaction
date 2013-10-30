@@ -144,13 +144,22 @@ if __name__ == "__main__":
 	dataArr, labelMat = logic.loadDataSet()
 	## 根据梯度下降法来计算拟合参数
 	weights = logic.gradAscent(dataArr, labelMat)
-	logic.plotBestfit(weights)
+	#logic.plotBestfit(weights)
 	## 根据随机梯度下降法来计算最佳拟合参数，由于只重复200次，因此效果不会比上面的500次更好
 	weights = logic.stocGradAscent0(array(dataArr), labelMat)
-	logic.plotBestfit(weights)
+	#logic.plotBestfit(weights)
 	## 改进随机梯度，同样200次效果更好
 	weights = logic.stocGradAscent1(array(dataArr), labelMat, 200)
-	logic.plotBestfit(weights)
+	#logic.plotBestfit(weights)
 
 	## 从文本文件中读取数据并进行多次测试，计算平均错误率
-	logic.multiTest()
+	#logic.multiTest()
+
+	## 下面是scikit的LogisticRegression函数
+	from sklearn import linear_model
+	scilogic  = linear_model.LogisticRegression()
+	## 拟合过程
+	scilogic.fit(array(dataArr), labelMat)
+	## 预测过程
+	## 注意我们故意将数据集变成了三维参数
+	print scilogic.predict([1, -1.395634, 4.662541])
