@@ -3,6 +3,10 @@ import sys
 from hmgis.Test.KNNTest import *
 from hmgis.Test.DecisionTreeTest import *
 from hmgis.Test.BayesianTest import *
+from hmgis.Test.LogisticTest import *
+from hmgis.Test.SVMTest import *
+from hmgis.Test.AdaBoostTest import *
+
 class ClassifierTest:
 	def knnTest(self):
 		knn = KNNTest()
@@ -33,6 +37,29 @@ class ClassifierTest:
 		emailBayesian = emailClassfier()
 		emailBayesian.spamTest(bayesian)
 
+	def logisticTest(self):
+		logic = LogisticTest()
+		logic.calGradAscent('data/logistic/testSet.txt')
+		logic.calRandomGradAscent('data/logistic/testSet.txt')
+		logic.calRandomGradAscent2('data/logistic/testSet.txt')
+		logic.multiColicHorseTest()
+		logic.calScikitLogistic('data/logistic/testSet.txt')
+
+	def svmTest(self):
+		svm = SVMTest()
+		'''
+		svm.testLinear()
+		svm.testMultiLinear()
+		svm.testRbf(2)
+		svm.testDigits(('rbf',50))
+		'''
+		svm.testSciKitSVM()
+
+	def adaBoostTest(self):
+		ada = AdaBoostTest()
+		#ada.adaboostTest()
+		ada.scikitAdaboost()
+
 if __name__ == "__main__":
 	reload(sys)                         # 2
 	sys.setdefaultencoding('utf-8')
@@ -41,4 +68,7 @@ if __name__ == "__main__":
 	classifier = ClassifierTest()
 	#classifier.knnTest()
 	#classifier.dtTest()
-	classifier.bayesianTest()
+	#classifier.bayesianTest()
+	#classifier.logisticTest()
+	#classifier.svmTest()
+	classifier.adaBoostTest()

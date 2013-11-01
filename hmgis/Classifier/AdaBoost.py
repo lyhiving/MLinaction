@@ -3,29 +3,6 @@
 from numpy import *
 class AdaBoost:
 
-	def loadSimpData(self):
-		datMat = matrix([[ 1. ,  2.1],
-			[ 2. ,  1.1],
-			[ 1.3,  1. ],
-			[ 1. ,  1. ],
-			[ 2. ,  1. ]])
-		classLabels = [1.0, 1.0, -1.0, -1.0, 1.0]
-		return datMat,classLabels
-
-	## 修改后的数据加载器，能自动从数据中获得一个表
-	def loadDataSet(self,fileName):      #general function to parse tab -delimited floats
-		numFeat = len(open(fileName).readline().split('\t')) #get number of fields
-		dataMat = []; labelMat = []
-		fr = open(fileName)
-		for line in fr.readlines():
-			lineArr =[]
-			curLine = line.strip().split('\t')
-			for i in range(numFeat-1):
-				lineArr.append(float(curLine[i]))
-			dataMat.append(lineArr)
-			labelMat.append(float(curLine[-1]))
-		return dataMat,labelMat
-
 	def stumpClassify(self,dataMatrix,dimen,threshVal,threshIneq):#just classify the data
 		retArray = ones((shape(dataMatrix)[0],1))
 		if threshIneq == 'lt':
@@ -128,69 +105,13 @@ class AdaBoost:
 		plt.show()
 		print "the Area Under the Curve is: ",ySum*xStep
 
-	def adaboostTest(self):
-		dataArr, labels = self.loadSimpData()
 
-		classifierArr, aggClassEst= self.adaBoostTrainDS(dataArr,labels,30)
-		# 对[0,0]的分类
-		print self.adaClassify([0, 0], classifierArr)
-
-		## 训练数据对数据进行分类
-		dataArr, labels = self.loadDataSet("data/adaboost/horseColicTraining2.txt")
-		classifierArr, aggClassEst = self.adaBoostTrainDS(dataArr,labels,50)
-		testdataArr, testlabels = self.loadDataSet("data/adaboost/horseColicTest2.txt")
-		prediction10 = self.adaClassify(testdataArr,classifierArr)
-		errArr = mat(ones((67,1)))
-		print errArr[prediction10 != mat(testlabels).T].sum()/67
-		## 展示ROC曲线
-		self.plotROC(aggClassEst.T, labels)
-
-	def scikitAdaboost(self):
-		import pylab as pl
-		import numpy as np
-
-		from sklearn.ensemble import AdaBoostClassifier
-		from sklearn.tree import DecisionTreeClassifier
-		from sklearn.datasets import make_gaussian_quantiles
-		X, y = adaboost.loadDataSet("data/svm/testSet.txt")
-		X = np.asarray(X)
-		y = np.asarray(y)
-		# Create and fit an AdaBoosted decision tree
-		bdt = AdaBoostClassifier(DecisionTreeClassifier(max_depth=1),
-								algorithm="SAMME",
-								n_estimators=200)
-		bdt.fit(X, y)
-
-		plot_colors = "br"
-		plot_step = 0.02
-		class_names = "AB"
-		pl.figure(figsize=(10, 5))
-		h = .02  # step size in the mesh
-		# Plot the decision boundaries
-		x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
-		y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
-		xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
-						np.arange(y_min, y_max, h))
-
-		Z = bdt.predict(np.c_[xx.ravel(), yy.ravel()])
-		Z = Z.reshape(xx.shape)
-		cs = pl.contourf(xx, yy, Z, cmap=pl.cm.Paired)
-
-		pl.axis("tight")
-		# Plot the training points
-		plot_colors = "br"
-		plot_step = 0.02
-		class_names = "AB"
-		pl.scatter(X[:, 0], X[:, 1], c=y, cmap=pl.cm.Paired)
-		pl.legend(loc='upper right')
-		pl.xlabel("Decision Boundary")
-		pl.show()
 
 ## AdaBoost是采用Boosting方法来将弱分类器（比随机比例50%好不了多少）
 ## 通过组合的方式来构成强分类器，提升分类水平
 if __name__ == "__main__":
 	adaboost = AdaBoost()
 
-	#adaboost.adaboostTest()
+	adaboost.adaboostTest()
 
-	adaboost.scikitAdaboost()
+	#adaboost.scikitAdaboost()
