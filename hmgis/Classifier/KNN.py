@@ -11,17 +11,26 @@ from mpl_toolkits.mplot3d import Axes3D
 
 class KNNDemo:
 
-	## 创建KNN第一个测试数据集
 	def createDataSet(self):
+		"""
+		创建KNN第一个测试数据集
+
+		:return:
+		"""
 		group = array([[1.0,1.1],[1.0,1.0],[0,0],[0,0.1]])
 		labels = ['A','A','B','B']
 		return group, labels
 
-	## inX 需要分类的数据
-	## dataSet 训练集
-	## labels 训练集分类
-	## KNN选择的数量
+
 	def classify0(self, inX, dataSet, labels, k):
+		"""
+		分类器
+		:param inX: 需要分类的数据
+		:param dataSet: 训练集
+		:param labels: 训练集分类
+		:param k: KNN选择的数量
+		:return:
+		"""
 		dataSetSize = dataSet.shape[0]
 		diffMat = tile(inX, (dataSetSize,1)) - dataSet
 		sqDiffMat = diffMat**2
@@ -35,15 +44,17 @@ class KNNDemo:
 		sortedClassCount = sorted(classCount.iteritems(), key=operator.itemgetter(1), reverse=True)
 		return sortedClassCount[0][0]
 
-	## KNN最简单的代码
+
 	def knnTest(self):
-		## 原生代码
+		"""
+		KNN最简单的测试代码
+		"""
 		group, labels = self.createDataSet()
-		print self.classify0([0,1], group, labels, 3)
+		print "原生分类器,[0,1]的分类结果为", self.classify0([0,1], group, labels, 3)
 		## scikit learn代码
 		neigh = KNeighborsClassifier(n_neighbors=3)
 		neigh.fit(group, labels)
-		print(neigh.predict([[0, 1]]))
+		print "SciKit的KNN分类器,[0,1]的分类结果为",neigh.predict([[0, 1]])
 
 	##------------------------------------------------------------------------------
 
@@ -96,24 +107,24 @@ class KNNDemo:
 		return normDataSet, ranges, minVals
 
 	## KNN分类
-	def datingClassTest(self):
+	def knnTest2(self, infile):
 		hoRatio = 0.80      #hold out 10%
-		datingDataMat,datingLabels = self.file2matrix('data/knn/datingTestSet2.txt')       #load data setfrom file
+		datingDataMat,datingLabels = self.file2matrix(infile)       #load data setfrom file
 		normMat, ranges, minVals = self.autoNorm(datingDataMat)
 		m = normMat.shape[0]
 		numTestVecs = int(m*hoRatio)
 		errorCount = 0.0
 		for i in range(numTestVecs):
 			classifierResult = self.classify0(normMat[i,:],normMat[numTestVecs:m,:],datingLabels[numTestVecs:m],3)
-			print "the classifier came back with: %d, the real answer is: %d" % (classifierResult, datingLabels[i])
+			print "分类结果为: %d, 实际结果为: %d" % (classifierResult, datingLabels[i])
 			if (classifierResult != datingLabels[i]): errorCount += 1.0
-		print "the total error rate is: %f" % (errorCount/float(numTestVecs))
-		print errorCount
+		print "总错误率为: %f" % (errorCount/float(numTestVecs))
+		print errorCount, "个错误"
 
 	## Scikit的KNN分类
-	def datingClassTest2(self):
+	def knnTestScikit(self, infile):
 		hoRatio = 0.80      #hold out 10%
-		datingDataMat,datingLabels = self.file2matrix('data/knn/datingTestSet2.txt')       #load data setfrom file
+		datingDataMat,datingLabels = self.file2matrix(infile)       #load data setfrom file
 		normMat, ranges, minVals = self.autoNorm(datingDataMat)
 		m = normMat.shape[0]
 		numTestVecs = int(m*hoRatio)
@@ -125,9 +136,9 @@ class KNNDemo:
 		for i in range(numTestVecs):
 			## 分类过程
 			classifierResult = neigh.predict(normMat[i,:])
-			print "the classifier came back with: %d, the real answer is: %d" % (classifierResult, datingLabels[i])
+			print "分类结果为: %d, 实际结果为: %d" % (classifierResult, datingLabels[i])
 			if (classifierResult != datingLabels[i]): errorCount += 1.0
-		print "the total error rate is: %f" % (errorCount/float(numTestVecs))
+		print "总错误率为: %f" % (errorCount/float(numTestVecs))
 		print errorCount
 
 	##------------------------------------------------------------------------------
@@ -180,9 +191,5 @@ if __name__ == "__main__":
 	normMat, ranges, minVals = knn.autoNorm(datingDataMat)
 	## 数据可视化
 	#knn.show3DTest(normMat, datingLabels)
-	## 普通KNN
-	knn.datingClassTest()
-	## SCIKIT的KNN
-	knn.datingClassTest2()
 	## 测试笔迹
 	knn.handwritingClassTest()

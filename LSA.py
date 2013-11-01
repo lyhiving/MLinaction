@@ -4,7 +4,7 @@ from numpy import *
 from numpy import linalg as la
 from math import log
 from numpy import asarray, sum
-
+import sys
 
 class LSA(object):
 	def __init__(self, stopwords, ignorechars):
@@ -14,7 +14,8 @@ class LSA(object):
 		self.dcount = 0
 
 	def parse(self, doc):
-		words = doc.split();
+		#words = doc.split();
+		words = doc
 		for w in words:
 			w = w.lower().translate(None, self.ignorechars)
 			if w in self.stopwords:
@@ -43,6 +44,7 @@ class LSA(object):
 		for i, k in enumerate(self.keys):
 			for d in self.wdict[k]:
 				self.A[i,d] += 1
+		self.A = self.A.T
 
 	def TFIDF(self):
 		WordsPerDoc = sum(self.A, axis=0)
@@ -122,18 +124,51 @@ class LSA(object):
 		## 计算SVD
 		u, s, vt = self.calc()
 		print "奇异值矩阵为"
+		print u.shape, s.shape, vt.shape
 		print s
 		n90 = self.maxWeight(s , 0.9)
 		print "前项目占据了奇异值信息量的90%:",n90
 
-		print mat(u[:,0:3])
-		print mat(vt[0:3,:])
+		emptyMat = zeros(shape=(n90, n90))
+		i = 0
+		for a in emptyMat:
+			a[i] = s[i]
+			i = i + 1
 
-
+	def weiboTest(self):
+		texts = [line.strip() for line in file('data/LSA/wb_clean.txt')]
+		test_words = [course.split('\t') for course in texts]
+		for doc in test_words:
+			self.parse(doc)
+		self.build2()
+		self.printA()
+		self.TFIDF()
+		self.printA()
+		u, s, vt = self.calc()
+		print "奇异值矩阵为"
+		print u.shape, s.shape, vt.shape
+		print s
+		n90 = self.maxWeight(s , 0.4)
+		print "前项目占据了奇异值信息量的90%:",n90
+		n90 = self.maxWeight(s , 0.5)
+		print "前项目占据了奇异值信息量的90%:",n90
+		n90 = self.maxWeight(s , 0.6)
+		print "前项目占据了奇异值信息量的90%:",n90
 
 if __name__ == "__main__":
+	reload(sys)
+	sys.setdefaultencoding('utf-8')
+	type = sys.getfilesystemencoding()
+
 	stopwords = ['and','edition','for','in','little','of','the','to','a','1','2','3','4']
 	ignorechars = ''',:'!()&-'''
 	lsa = LSA(stopwords, ignorechars)
-	lsa.simpleTest()
+	#lsa.simpleTest()
 	#lsa.corpusTest()
+	#lsa.weiboTest()
+
+
+
+	from hmgis.TextMining.parseFile import *
+	p = parseCSV('lib/chinesestopwords.txt', 'lib/userdict')
+	p.parse('data/LSA/jiangbt.csv', 'data/LSA/wb_clean.txt')

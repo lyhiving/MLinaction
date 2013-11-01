@@ -5,6 +5,7 @@ from numpy import linalg as la
 
 
 class SVD:
+	## 加载简单数据
 	def loadExData(self):
 		return [[0, 0, 0, 2, 2],
 		        [0, 0, 0, 3, 3],
@@ -14,6 +15,7 @@ class SVD:
 		        [5, 5, 5, 0, 0],
 		        [1, 1, 1, 0, 0]]
 
+	## 加载一个稀疏矩阵数据
 	def loadExData2(self):
 		return [[0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 5],
 		        [0, 0, 0, 3, 0, 4, 0, 0, 0, 0, 3],
@@ -31,11 +33,13 @@ class SVD:
 	## 这样实际上原始矩阵Data = Um2*Sigma22*VT2n来表示
 	def svdTest1(self):
 		data = self.loadExData()
+		## 使用numpy的SVD技术分解矩阵
 		U, Sigma, VT = la.svd(data)
 		print U
 		print Sigma
 		print VT
 		## 将Sigma的主要值提取出来
+		## 构造一个对角矩阵
 		print '--------------------------------------'
 		Sig3 = mat([[Sigma[0], 0], [0, Sigma[1]]])
 		## 下面这个矩阵和原矩阵非常类似
