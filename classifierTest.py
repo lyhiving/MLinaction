@@ -1,22 +1,16 @@
 # _*_ coding: utf-8 _*_
 import sys
-from hmgis.Classifier.KNN import *
-from hmgis.Classifier.DecisionTree import *
-from hmgis.Classifier.Bayesian import *
-
+from hmgis.Test.KNNTest import *
+from hmgis.Test.DecisionTreeTest import *
+from hmgis.Test.BayesianTest import *
 class ClassifierTest:
 	def knnTest(self):
-		knn = KNNDemo()
-		## 最简单的测试
+		knn = KNNTest()
 		knn.knnTest()
-		## 加载数据
-		datingDataMat, datingLabels = knn.file2matrix('data/knn/datingTestSet2.txt')
-		normMat, ranges, minVals = knn.autoNorm(datingDataMat)
-		## 二三维可视化
-		knn.show2DTest(normMat, datingLabels)
-		knn.show3DTest(normMat, datingLabels)
-		## 基于数据文件的分类
+		knn.show2DPoint('data/knn/datingTestSet2.txt')
+		knn.show3DPoint('data/knn/datingTestSet2.txt')
 		knn.knnTest2('data/knn/datingTestSet2.txt')
+		print '-----------------------'
 		knn.knnTestScikit('data/knn/datingTestSet2.txt')
 		## 测试笔迹
 		knn.handwritingClassTest()
@@ -27,35 +21,17 @@ class ClassifierTest:
 		dt.dtTest(dataMat, labels)
 
 	def bayesianTest(self):
-		bayesian = Bayesian()
+		bayesian = BayesianTest()
 		listOPosts, listClasses = bayesian.loadDataSet()
-		## 将数据转化为词袋
-		myVocaList = bayesian.createVocabList(listOPosts)
-		print myVocaList
-		print "第一个文本在词袋中的分布"
-		print bayesian.setOfWords2Vec(myVocaList, listOPosts[0])
-		## 将两个类型的数据转化为词汇矢量，其值为词汇在文本中的出现次数
-		trainMat = []
-		for postinDoc in listOPosts:
-			trainMat.append(bayesian.setOfWords2Vec(myVocaList, postinDoc))
+		bayesian.testingNB()
 
-		## 测试先验概率
-		p0V, p1V, pAb = bayesian.trainNB0(trainMat, listClasses)
-		print p0V
-		print p1V
-		print pAb
-		## 测试后验概率值
-		#bayesian.testingNB()
+		rssBayesian = RSSBayesianTest()
+		rssBayesian.SingleClassifier()
+		rssBayesian.scikitNBClassfier()
+		rssBayesian.crossValidClassifier()
 
-		## 用一堆文本进行分类测试
-		email = emailClassfier()
-		#email.spamTest(bayesian)
-
-		## RSS文本测试
-		rss = RSSBayesian()
-		#rss.SingleClassifier()
-		#rss.crossValidClassifier()
-		rss.scikitNBClassfier()
+		emailBayesian = emailClassfier()
+		emailBayesian.spamTest(bayesian)
 
 if __name__ == "__main__":
 	reload(sys)                         # 2
