@@ -35,8 +35,10 @@ class AdaBoostTest:
 
 		## 训练数据对数据进行分类
 		dataArr, labels = self.loadDataSet("data/adaboost/horseColicTraining2.txt")
+		## 培训数据
 		classifierArr, aggClassEst = ada.adaBoostTrainDS(dataArr,labels,50)
 		testdataArr, testlabels = self.loadDataSet("data/adaboost/horseColicTest2.txt")
+		## 数据分类
 		prediction10 = ada.adaClassify(testdataArr,classifierArr)
 		errArr = mat(ones((67,1)))
 		print errArr[prediction10 != mat(testlabels).T].sum()/67

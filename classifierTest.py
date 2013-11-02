@@ -6,6 +6,10 @@ from hmgis.Test.BayesianTest import *
 from hmgis.Test.LogisticTest import *
 from hmgis.Test.SVMTest import *
 from hmgis.Test.AdaBoostTest import *
+from hmgis.Test.RegressionTest import *
+from hmgis.Test.KMeansTest import *
+from hmgis.TextMining.SVD import *
+from hmgis.TextMining.Recommend import *
 
 class ClassifierTest:
 	def knnTest(self):
@@ -60,6 +64,39 @@ class ClassifierTest:
 		#ada.adaboostTest()
 		ada.scikitAdaboost()
 
+	def regressionTest(self):
+		reg  = RegressionTest()
+		#reg.simpleTest()
+		#reg.multiTest()
+		#
+		#岭回归
+		reg.ridgeRegression()
+
+	def kmeansTest(self):
+		kmeans = KMeansTest()
+		#kmeans.kMeansTest()
+		#kmeans.KMeansTest2()
+		#kmeans.KMeansTest3()
+		kmeans.ClusterClubsTest(6)
+		#kmeans.ScikitKMeansTest()
+
+	def SVDTest(self):
+		svd = SVD()
+		svd.svdTest1()
+		svd.svdTest2()
+
+
+	def recommendTest(self):
+		recom = Recommend()
+		#recom.recommendTest()
+		#recom.recommendTest2()
+
+		myMat = mat(recom.loadExData())
+		print recom.ecludSim(myMat[:,0], myMat[:,4])
+		print recom.cosSim(myMat[:,0], myMat[:,4])
+		print recom.cosSim(myMat[0,:].T, myMat[4,:].T)
+		print recom.pearsSim(myMat[:,0], myMat[:,4])
+
 if __name__ == "__main__":
 	reload(sys)                         # 2
 	sys.setdefaultencoding('utf-8')
@@ -71,4 +108,8 @@ if __name__ == "__main__":
 	#classifier.bayesianTest()
 	#classifier.logisticTest()
 	#classifier.svmTest()
-	classifier.adaBoostTest()
+	#classifier.adaBoostTest()
+	#classifier.regressionTest()
+	#classifier.kmeansTest()
+	#classifier.SVDTest()
+	classifier.recommendTest()
