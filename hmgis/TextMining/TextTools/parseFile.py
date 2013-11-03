@@ -55,3 +55,4 @@ class parseCSV:
 				f.writelines(str + "\n")
 			str = ""
 		print "文件输出成功"
+

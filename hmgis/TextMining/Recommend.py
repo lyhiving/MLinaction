@@ -1,16 +1,7 @@
 # _*_ coding: utf-8 _*_
-from hmgis.TextMining.SVD import *
+from hmgis.Test.SVDTest import *
 
 class Recommend:
-	## 加载简单数据
-	def loadExData(self):
-		return [[0, 0, 0, 2, 2],
-		        [0, 0, 0, 3, 3],
-		        [0, 0, 0, 1, 1],
-		        [1, 1, 1, 0, 0],
-		        [2, 2, 2, 0, 0],
-		        [5, 5, 5, 0, 0],
-		        [1, 1, 1, 0, 0]]
 
 	## 欧式距离
 	def ecludSim(self, inA, inB):
@@ -89,22 +80,4 @@ class Recommend:
 					print 0,
 			print ''
 
-	## 基于物品相似度的推荐
-	def recommendTest(self):
-		svd = SVD()
-		myMat = mat(svd.loadExData())
-		print myMat
-		myMat[0, 1] = myMat[0, 0] = myMat[1, 0] = myMat[2, 0] = 4
-		myMat[3, 3] = 2
-		print myMat
-		## 第一个参数为数据，第二个参数为用户，第三个参数为数量
-		## 结果为[(2, 2.5), (1, 2.0243290220056256)]，表示用户对第1和2项的估计评分
-		print self.recommend(myMat, 2, 5, self.cosSim, self.standEst)
 
-	def recommendTest2(self):
-		svd = SVD()
-		myMat = mat(svd.loadExData2())
-		## 第一个参数为数据，第二个参数为用户，第三个参数为数量
-		## 结果为[(2, 2.5), (1, 2.0243290220056256)]，表示用户对第1和2项的估计评分
-		print self.recommend(myMat, 2, 8, self.cosSim, self.svdEst)
-		print self.recommend(myMat, 2, 8, self.cosSim, self.standEst)

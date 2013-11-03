@@ -8,8 +8,10 @@ from hmgis.Test.SVMTest import *
 from hmgis.Test.AdaBoostTest import *
 from hmgis.Test.RegressionTest import *
 from hmgis.Test.KMeansTest import *
-from hmgis.TextMining.SVD import *
-from hmgis.TextMining.Recommend import *
+from hmgis.Test.SVDTest import *
+from hmgis.Test.RecommendTest import *
+from hmgis.Test.LSATest import *
+from hmgis.Test.GensimTest.SimpledocTest import *
 
 class ClassifierTest:
 	def knnTest(self):
@@ -81,21 +83,29 @@ class ClassifierTest:
 		#kmeans.ScikitKMeansTest()
 
 	def SVDTest(self):
-		svd = SVD()
+		svd = SVDTest()
 		svd.svdTest1()
 		svd.svdTest2()
 
 
 	def recommendTest(self):
-		recom = Recommend()
-		#recom.recommendTest()
-		#recom.recommendTest2()
+		recom = RecommendTest()
+		recom.recommendTest()
+		recom.recommendTest2()
+		recom.singleInfoSimilary()
 
-		myMat = mat(recom.loadExData())
-		print recom.ecludSim(myMat[:,0], myMat[:,4])
-		print recom.cosSim(myMat[:,0], myMat[:,4])
-		print recom.cosSim(myMat[0,:].T, myMat[4,:].T)
-		print recom.pearsSim(myMat[:,0], myMat[:,4])
+	def LSATest(self):
+		lsa = LSATest()
+		#lsa.simpleTest()
+		#lsa.corpusTest()
+		lsa.weiboTest()
+
+	def GensimTest(self):
+		gen = GensimTest()
+		#gen.simple()
+		#gen.simple2()
+		#gen.GIS3SNewsTopic()
+		gen.weiboTopic()
 
 if __name__ == "__main__":
 	reload(sys)                         # 2
@@ -112,4 +122,6 @@ if __name__ == "__main__":
 	#classifier.regressionTest()
 	#classifier.kmeansTest()
 	#classifier.SVDTest()
-	classifier.recommendTest()
+	#classifier.recommendTest()
+	#classifier.LSATest()
+	classifier.GensimTest()

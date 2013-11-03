@@ -3,7 +3,7 @@
 from numpy import *
 from numpy import linalg as la
 
-class SVD:
+class SVDTest:
 	## 加载简单数据
 	def loadExData(self):
 		return [[0, 0, 0, 2, 2],
