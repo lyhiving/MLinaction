@@ -67,81 +67,93 @@ class ClassifierTest:
 		emailBayesian = emailClassfier()
 		emailBayesian.spamTest(bayesian)
 
+	## Logistic分类，将数据分为0和1两种类型
 	def logisticTest(self):
 		logic = LogisticTest()
+		## t梯度下降法计算
 		logic.calGradAscent('data/logistic/testSet.txt')
+		## 随机梯度下降法
 		logic.calRandomGradAscent('data/logistic/testSet.txt')
+		## 改进随机梯度下降法
 		logic.calRandomGradAscent2('data/logistic/testSet.txt')
+		## 交叉验证
 		logic.multiColicHorseTest()
+		## SCIKIT的logistic分类
 		logic.calScikitLogistic('data/logistic/testSet.txt')
 
+	## SVM分类，原理太复杂
 	def svmTest(self):
 		svm = SVMTest()
-		'''
+		## 线性SVM
 		svm.testLinear()
 		svm.testMultiLinear()
+		## RBF核函数
 		svm.testRbf(2)
-		svm.testDigits(('rbf',50))
-		'''
+		svm.testDigits(('rbf', 50))
+		## SciKit中的SVM方法
 		svm.testSciKitSVM()
 
+	## Boost类型分类，它将一个简单的弱分类器单根决策树构成了一个强分类器
 	def adaBoostTest(self):
 		ada = AdaBoostTest()
 		#ada.adaboostTest()
 		ada.scikitAdaboost()
 
+	## 回归分析
 	def regressionTest(self):
 		reg = RegressionTest()
-		#reg.simpleTest()
-		#reg.multiTest()
+		reg.simpleTest()
+		reg.multiTest()
 		#
 		#岭回归
 		reg.ridgeRegression()
 
+	## KMeans聚类
 	def kmeansTest(self):
 		kmeans = KMeansTest()
-		#kmeans.kMeansTest()
-		#kmeans.KMeansTest2()
-		#kmeans.KMeansTest3()
+		kmeans.kMeansTest()
+		kmeans.KMeansTest2()
+		kmeans.KMeansTest3()
 		kmeans.ClusterClubsTest(6)
 
 	#kmeans.ScikitKMeansTest()
 
+	## SVD降维分解，它是LSI的核心
 	def SVDTest(self):
 		svd = SVDTest()
 		svd.svdTest1()
 		svd.svdTest2()
 
-
+	## 推荐系统，主要是相似度计算
 	def recommendTest(self):
 		recom = RecommendTest()
 		recom.recommendTest()
 		recom.recommendTest2()
 		recom.singleInfoSimilary()
 
+	## LSA（LSI）测试
 	def LSATest(self):
 		lsa = LSATest()
 		#lsa.simpleTest()
 		#lsa.corpusTest()
 		lsa.weiboTest()
 
+	## Gensim库的测试
 	def GensimTest(self):
 		gen = GensimTest()
 		gen.simple()
-		#gen.simple2()
-		#gen.GIS3SNewsTopic()
-		#gen.weiboTopic()
+		gen.simple2()
+		gen.GIS3SNewsTopic()
+		gen.weiboTopic()
 		## 两个词汇之间的相关性Spearman Rank Corralation公式
 		a = [1, 0, 0, 1, 0, 0, 0, 0, 0]
 		b = [0, 1, 1, 0, 1, 0, 0, 0, 0]
-		#from scipy.stats import *
-		#print spearmanr(a, b)
 
 
 if __name__ == "__main__":
 	reload(sys)                         # 2
 	sys.setdefaultencoding('utf-8')
-	type = sys.getfilesystemencoding()
+	sys.getfilesystemencoding()
 
 	classifier = ClassifierTest()
 	classifier.knnTest()

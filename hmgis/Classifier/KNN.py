@@ -2,7 +2,6 @@
 #采用原生代码和scikit Learn库共同测试
 
 import operator
-
 from numpy import *
 import matplotlib.pyplot as plt
 import pylab as pl
@@ -32,9 +31,13 @@ class KNNDemo:
 		sortedClassCount = sorted(classCount.iteritems(), key=operator.itemgetter(1), reverse=True)
 		return sortedClassCount[0][0]
 
-	## 归一化处理函数，以防止参数之间的值差距过大
-	## 使得所有制均在-1至1之间
 	def autoNorm(self, dataSet):
+		"""
+		归一化处理函数，以防止参数之间的值差距过大
+		使得所有制均在-1至1之间
+		:param dataSet:
+		:return:
+		"""
 		minVals = dataSet.min(0)
 		maxVals = dataSet.max(0)
 		ranges = maxVals - minVals
@@ -44,16 +47,23 @@ class KNNDemo:
 		normDataSet = normDataSet / tile(ranges, (m, 1))   #element wise divide
 		return normDataSet, ranges, minVals
 
-	##------------------------------------------------------------------------------
-	## 将点数据进行2维可视化
 	def show2D(self, datingDataMat, datingLabels):
+		"""
+		将点数据进行2维可视化
+		:param datingDataMat:
+		:param datingLabels:
+		"""
 		fig = plt.figure()
 		ax = fig.add_subplot(111)
 		ax.scatter(datingDataMat[:, 1], datingDataMat[:, 2], 15.0 * array(datingLabels), 15.0 * array(datingLabels))
 		plt.show()
 
-	## 将点数据进行三维可视化，即最多只能显示3个属性
 	def show3D(self, datingDataMat, datingLabels):
+		"""
+		将点数据进行三维可视化，即最多只能显示3个属性
+		:param datingDataMat:
+		:param datingLabels:
+		"""
 		fig = pl.figure(1, figsize=(8, 6))
 		ax = Axes3D(fig, elev=-150, azim=110)
 		ax.scatter(datingDataMat[:, 1], datingDataMat[:, 2], datingDataMat[:, 0], c=datingLabels)
