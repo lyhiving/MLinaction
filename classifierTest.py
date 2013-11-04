@@ -26,15 +26,23 @@ from hmgis.Test.GensimTest.SimpledocTest import *
 
 
 class ClassifierTest:
+	## KNN距离分类测试
 	def knnTest(self):
 		knn = KNNTest()
+		## 最简单的KNN测试，判断一个点的分类情况
 		knn.knnTest()
+		## 点的可视化
 		knn.show2DPoint('data/knn/datingTestSet2.txt')
 		knn.show3DPoint('data/knn/datingTestSet2.txt')
+		## 从txt文件中获得数据进行分类
+		## 分类前会进行归一化处理
 		knn.knnTest2('data/knn/datingTestSet2.txt')
 		print '-----------------------'
+		## 使用scikit learn包中的KNN函数进行分类
 		knn.knnTestScikit('data/knn/datingTestSet2.txt')
 		## 测试笔迹
+		## 将一幅图像转化为一行数据后进行KNN分类
+		## 这种方法的最大问题是必须一次性加载数据到内存中，因此实际应用中并不适合
 		knn.handwritingClassTest()
 
 	def dtTest(self):
