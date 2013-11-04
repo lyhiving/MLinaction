@@ -68,9 +68,9 @@ class SVMLib:
 					if (abs(alphas[j] - alphaJold) < 0.00001): print "j not moving enough"; continue
 					alphas[i] += labelMat[j] * labelMat[i] * (alphaJold - alphas[j])#update i by the same amount as j
 					#the update is in the oppostie direction
-					b1 = b - Ei - labelMat[i] * (alphas[i] - alphaIold) * dataMatrix[i, :] * dataMatrix[i, :].T -
+					b1 = b - Ei - labelMat[i] * (alphas[i] - alphaIold) * dataMatrix[i, :] * dataMatrix[i, :].T - \
 					     labelMat[j] * (alphas[j] - alphaJold) * dataMatrix[i, :] * dataMatrix[j, :].T
-					b2 = b - Ej - labelMat[i] * (alphas[i] - alphaIold) * dataMatrix[i, :] * dataMatrix[j, :].T -
+					b2 = b - Ej - labelMat[i] * (alphas[i] - alphaIold) * dataMatrix[i, :] * dataMatrix[j, :].T - \
 					     labelMat[j] * (alphas[j] - alphaJold) * dataMatrix[j, :] * dataMatrix[j, :].T
 					if (0 < alphas[i]) and (C > alphas[i]):
 						b = b1

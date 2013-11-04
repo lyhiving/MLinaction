@@ -1,14 +1,14 @@
 # _*_ coding: utf-8 _*_
-'''
-author : chiangbt@gmail.com
-function : 整个包的测试起点
-涵盖：
-分类包：KNN、DecisionTree、Bayesian、Logistic、SVM、AdaBoostTest
-回归包：线性回归、多元线性回归
-聚类包：KMeans
-文本挖掘：SVD、LSI、pLSA、LDA
-需要安装的第三方包：numpy、scipy、nltk、scikit、gensim
-'''
+#
+# author : chiangbt@gmail.com
+# function : 整个包的测试起点
+# 涵盖：
+# 分类包：KNN、DecisionTree、Bayesian、Logistic、SVM、AdaBoostTest
+# 回归包：线性回归、多元线性回归
+# 聚类包：KMeans
+# 文本挖掘：SVD、LSI、pLSA、LDA
+# 需要安装的第三方包：numpy、scipy、nltk、scikit、gensim
+#
 
 import sys
 from hmgis.Test.KNNTest import *
@@ -122,9 +122,8 @@ class ClassifierTest:
 		## 两个词汇之间的相关性Spearman Rank Corralation公式
 		a = [1, 0, 0, 1, 0, 0, 0, 0, 0]
 		b = [0, 1, 1, 0, 1, 0, 0, 0, 0]
-		from scipy.stats import *
-
-		print spearmanr(a, b)
+		#from scipy.stats import *
+		#print spearmanr(a, b)
 
 
 if __name__ == "__main__":
@@ -133,7 +132,7 @@ if __name__ == "__main__":
 	type = sys.getfilesystemencoding()
 
 	classifier = ClassifierTest()
-	#classifier.knnTest()
+	classifier.knnTest()
 	#classifier.dtTest()
 	#classifier.bayesianTest()
 	#classifier.logisticTest()
@@ -144,4 +143,4 @@ if __name__ == "__main__":
 	#classifier.SVDTest()
 	#classifier.recommendTest()
 	#classifier.LSATest()
-	classifier.GensimTest()
+	#classifier.GensimTest()

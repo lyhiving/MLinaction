@@ -1,4 +1,5 @@
 # _*_ coding: utf-8 _*_
+from os import listdir
 from sklearn.neighbors import KNeighborsClassifier
 
 from hmgis.Classifier.KNN import *
@@ -93,6 +94,10 @@ class KNNTest:
 		return returnVect
 
 	def handwritingClassTest(self):
+		"""
+
+
+		"""
 		hwLabels = []
 		trainingFileList = listdir('data/knn/trainingDigits')           #load the training set
 		m = len(trainingFileList)
