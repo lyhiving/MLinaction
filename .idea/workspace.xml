@@ -20,14 +20,14 @@
     <file path="/testSet.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383100199830" ignored="false" />
     <file path="/AdaBoost.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383322853755" ignored="false" />
     <file path="/README.md" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383298002261" ignored="false" />
-    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383558480263" ignored="false" />
+    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383558671653" ignored="false" />
     <file path="/Regression.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383147398633" ignored="false" />
     <file path="/KMean.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383185652923" ignored="false" />
     <file path="/SVD.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383377029445" ignored="false" />
     <file path="/LSA.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383378016154" ignored="false" />
     <file path="/parseCSV.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383293002734" ignored="false" />
     <file path="$PROJECT_DIR$/../Gensim/generationCorpus.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383291971178" ignored="false" />
-    <file path="/classifierTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383558668146" ignored="false" />
+    <file path="/classifierTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383558831474" ignored="false" />
     <file path="/KNNTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383315478323" ignored="false" />
     <file path="/BayesianTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383317573634" ignored="false" />
     <file path="/LogisticTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383319498523" ignored="false" />
@@ -68,7 +68,7 @@
       <file leaf-file-name="classifierTest.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classifierTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="46" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.9142212">
+            <state line="67" column="40" selection-start="1828" selection-end="1828" vertical-scroll-proportion="0.2302483">
               <folding>
                 <element signature="e#243#253#0" expanded="true" />
               </folding>
@@ -534,7 +534,11 @@
       <created>1383558482549</created>
       <updated>1383558482549</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="10.4第一次调整">
+      <created>1383558673816</created>
+      <updated>1383558673816</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -565,8 +569,8 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740742" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740742" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20807666" sideWeight="0.5416667" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22655715" sideWeight="0.69777775" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20807666" sideWeight="0.69777775" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22655715" sideWeight="0.69777775" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4941691" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1477438" sideWeight="0.27596438" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -732,7 +736,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classifierTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="46" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.9142212">
+        <state line="67" column="40" selection-start="1828" selection-end="1828" vertical-scroll-proportion="0.2302483">
           <folding>
             <element signature="e#243#253#0" expanded="true" />
           </folding>

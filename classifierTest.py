@@ -45,21 +45,25 @@ class ClassifierTest:
 		## 这种方法的最大问题是必须一次性加载数据到内存中，因此实际应用中并不适合
 		knn.handwritingClassTest()
 
+	## 决策树分类
 	def dtTest(self):
 		dt = DecisionTreeDemo()
 		dataMat, labels = dt.createDataset('data/dt/lenses.txt')
+		## 由于决策树分类的可视化结果比较麻烦，直接使用了scikit的方法
 		dt.dtTest(dataMat, labels)
 
+	## 贝叶斯分类，适用于文本分类情况
 	def bayesianTest(self):
 		bayesian = BayesianTest()
 		listOPosts, listClasses = bayesian.loadDataSet()
+		## 最简单的贝叶斯分类
 		bayesian.testingNB()
-
+		## 从RSS文件中进行分类
 		rssBayesian = RSSBayesianTest()
 		rssBayesian.SingleClassifier()
 		rssBayesian.scikitNBClassfier()
 		rssBayesian.crossValidClassifier()
-
+		## 对email数据进行分类
 		emailBayesian = emailClassfier()
 		emailBayesian.spamTest(bayesian)
 
