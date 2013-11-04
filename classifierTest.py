@@ -1,4 +1,15 @@
 # _*_ coding: utf-8 _*_
+'''
+author : chiangbt@gmail.com
+function : 整个包的测试起点
+涵盖：
+分类包：KNN、DecisionTree、Bayesian、Logistic、SVM、AdaBoostTest
+回归包：线性回归、多元线性回归
+聚类包：KMeans
+文本挖掘：SVD、LSI、pLSA、LDA
+需要安装的第三方包：numpy、scipy、nltk、scikit、gensim
+'''
+
 import sys
 from hmgis.Test.KNNTest import *
 from hmgis.Test.DecisionTreeTest import *
@@ -12,6 +23,7 @@ from hmgis.Test.SVDTest import *
 from hmgis.Test.RecommendTest import *
 from hmgis.Test.LSATest import *
 from hmgis.Test.GensimTest.SimpledocTest import *
+
 
 class ClassifierTest:
 	def knnTest(self):
@@ -67,7 +79,7 @@ class ClassifierTest:
 		ada.scikitAdaboost()
 
 	def regressionTest(self):
-		reg  = RegressionTest()
+		reg = RegressionTest()
 		#reg.simpleTest()
 		#reg.multiTest()
 		#
@@ -80,7 +92,8 @@ class ClassifierTest:
 		#kmeans.KMeansTest2()
 		#kmeans.KMeansTest3()
 		kmeans.ClusterClubsTest(6)
-		#kmeans.ScikitKMeansTest()
+
+	#kmeans.ScikitKMeansTest()
 
 	def SVDTest(self):
 		svd = SVDTest()
@@ -102,10 +115,17 @@ class ClassifierTest:
 
 	def GensimTest(self):
 		gen = GensimTest()
-		#gen.simple()
+		gen.simple()
 		#gen.simple2()
 		#gen.GIS3SNewsTopic()
-		gen.weiboTopic()
+		#gen.weiboTopic()
+		## 两个词汇之间的相关性Spearman Rank Corralation公式
+		a = [1, 0, 0, 1, 0, 0, 0, 0, 0]
+		b = [0, 1, 1, 0, 1, 0, 0, 0, 0]
+		from scipy.stats import *
+
+		print spearmanr(a, b)
+
 
 if __name__ == "__main__":
 	reload(sys)                         # 2
