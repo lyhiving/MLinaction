@@ -1,11 +1,9 @@
 # _*_ coding: utf-8 _*_
 
 from numpy import *
-import jieba.posseg as pseg
-import jieba
+
 
 class Bayesian:
-
 	## 寻找出单个文档，其中词汇不重复
 	def createVocabList(self, dataSet):
 		vocabSet = set([])  #create empty set

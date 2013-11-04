@@ -1,6 +1,5 @@
 # _*_ coding: utf-8 _*_
 from numpy import *
-import matplotlib
 import matplotlib.pyplot as plt
 from hmgis.Clustering.KMean import *
 

@@ -3,6 +3,7 @@
 from numpy import *
 from numpy import linalg as la
 
+
 class SVDTest:
 	## 加载简单数据
 	def loadExData(self):
@@ -58,7 +59,7 @@ class SVDTest:
 		sig2 = Sigma ** 2
 		print "--------------------"
 		print "sigma值总量", sum(sig2)
-		print "sigma值90%", sum(sig2)*0.9
+		print "sigma值90%", sum(sig2) * 0.9
 		##
 		print sum(sig2[:2])
 		print sum(sig2[:3])

@@ -77,6 +77,7 @@ class RegressionTest:
 
 		## CART决策树回归
 		from sklearn.tree import DecisionTreeRegressor
+
 		clf_2 = DecisionTreeRegressor(max_depth=5)
 		clf_2.fit(xArr, yArr)
 		print clf_2.predict([[1, 0.35, 0.265, 0.09, 0.2255, 0.0995, 0.0485, 0.07]])

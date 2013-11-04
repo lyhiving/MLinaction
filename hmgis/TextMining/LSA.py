@@ -1,10 +1,11 @@
 # _*_ coding: utf-8 _*_
 
+from math import log
+
 from numpy import *
 from numpy import linalg as la
-from math import log
 from numpy import asarray, sum
-import sys
+
 
 class LSA(object):
 	def __init__(self, stopwords, ignorechars):
@@ -33,7 +34,7 @@ class LSA(object):
 		self.A = zeros([len(self.keys), self.dcount])
 		for i, k in enumerate(self.keys):
 			for d in self.wdict[k]:
-				self.A[i,d] += 1
+				self.A[i, d] += 1
 		self.A = self.A.T
 
 	def build2(self):
@@ -43,7 +44,7 @@ class LSA(object):
 		self.A = zeros([len(self.keys), self.dcount])
 		for i, k in enumerate(self.keys):
 			for d in self.wdict[k]:
-				self.A[i,d] += 1
+				self.A[i, d] += 1
 		self.A = self.A.T
 
 	def TFIDF(self):
@@ -52,7 +53,7 @@ class LSA(object):
 		rows, cols = self.A.shape
 		for i in range(rows):
 			for j in range(cols):
-				self.A[i,j] = (self.A[i,j] / WordsPerDoc[j]) * log(float(cols) / DocsPerWord[i])
+				self.A[i, j] = (self.A[i, j] / WordsPerDoc[j]) * log(float(cols) / DocsPerWord[i])
 
 	def printA(self):
 		print self.A.shape
@@ -62,7 +63,7 @@ class LSA(object):
 		self.U, self.S, self.Vt = la.svd(self.A)
 		return self.U, self.S, self.Vt
 
-	def maxWeight(self,Sigma, weight=0.9):
+	def maxWeight(self, Sigma, weight=0.9):
 		sig2 = Sigma ** 2
 		sigsum = sum(sig2)
 		sigsum_value = sigsum * weight

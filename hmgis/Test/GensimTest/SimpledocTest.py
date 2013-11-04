@@ -1,8 +1,6 @@
 # _*_ coding: utf-8 _*_
 import logging
-import sys
 import jieba
-import jieba.posseg as pseg
 from gensim import corpora, models, similarities
 
 
@@ -10,7 +8,7 @@ class GensimTest:
 	def printTopicClass(self, corpus_text, corpus_lis):
 		i = 0
 		for corpus in corpus_lis:
-			if len(corpus)==0:
+			if len(corpus) == 0:
 				print corpus_text[i], "属于 -1 主题"
 			else:
 				max = abs(corpus[0][1])
@@ -20,13 +18,13 @@ class GensimTest:
 						max = abs(t[1])
 						tag = t[0]
 				print corpus_text[i], "属于", tag, "主题"
-			i = i+1
+			i = i + 1
 
 	def topicModelDict(self, corpus_text, corpus_lis):
 		topic_dict = {}
 
 		for (corpus, i) in zip(corpus_lis, range(0, len(corpus_lis))):
-			if len(corpus)==0:
+			if len(corpus) == 0:
 				topic_dict[corpus_text[i]] = -1
 			else:
 				max = abs(corpus[0][1])
@@ -37,7 +35,7 @@ class GensimTest:
 						tag = t[0]
 				topic_dict[corpus_text[i]] = tag
 
-		info = sorted(topic_dict.items(), key=lambda d:d[1])
+		info = sorted(topic_dict.items(), key=lambda d: d[1])
 		return info
 
 	def simple(self):
@@ -141,7 +139,7 @@ class GensimTest:
 		print query_bow
 		query_lsi = lsi[query_bow]
 		print query_lsi
-		self.printTopicClass([query],[query_lsi])
+		self.printTopicClass([query], [query_lsi])
 
 		# 与"Human computer interaction"前9位相似度的文档
 		sims = index[query_lsi]
@@ -170,7 +168,7 @@ class GensimTest:
 			for t1 in t:
 				print t1
 
-		from gensim import corpora, models, similarities
+		from gensim import corpora, models
 
 		## 剔除所有只能出现了一次的特征性
 		all_tokens = sum(texts, [])
@@ -204,7 +202,7 @@ class GensimTest:
 		courses = [line.strip() for line in file('data/LSA/wb_clean.txt')]
 		texts = [course.split('\t') for course in courses]
 
-		from gensim import corpora, models, similarities
+		from gensim import corpora, models
 
 		## 剔除所有只能出现了一次的特征性
 		all_tokens = sum(texts, [])

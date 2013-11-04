@@ -2,9 +2,10 @@
 from numpy import *
 from hmgis.TextMining.LSA import *
 
+
 class LSATest:
 	def simpleTest(self):
-		titles =[
+		titles = [
 			"The Neatest Little Guide to Stock Market Investing",
 			"Investing For Dummies, 4th Edition",
 			"The Little Book of Common Sense Investing: The Only Way to Guarantee Your Fair Share of Stock Market Returns",
@@ -13,9 +14,9 @@ class LSATest:
 			"Rich Dad's Guide to Investing: What the Rich Invest in, That the Poor and the Middle Class Do Not!",
 			"Investing in Real Estate, 5th Edition",
 			"Stock Investing For Dummies",
-			"Rich Dad's Advisors: The ABC's of Real Estate Investing: The Secrets of Finding Hidden Profits Most Investors Miss" ]
+			"Rich Dad's Advisors: The ABC's of Real Estate Investing: The Secrets of Finding Hidden Profits Most Investors Miss"]
 
-		stopwords = ['and','edition','for','in','little','of','the','to','a','1','2','3','4']
+		stopwords = ['and', 'edition', 'for', 'in', 'little', 'of', 'the', 'to', 'a', '1', '2', '3', '4']
 		ignorechars = ''',:'!()&-'''
 		lsa = LSA(stopwords, ignorechars)
 
@@ -34,15 +35,15 @@ class LSATest:
 
 		print "奇异值矩阵为"
 		print s
-		n90 = lsa.maxWeight(s , 0.9)
-		print "前项目占据了奇异值信息量的90%:",n90
+		n90 = lsa.maxWeight(s, 0.9)
+		print "前项目占据了奇异值信息量的90%:", n90
 
-		Sig3 = mat([[s[0], 0, 0, 0, 0], [0, s[1], 0, 0, 0], [0 ,0 ,s[2], 0, 0], [0 ,0 ,0, s[3], 0], [0, 0, 0, 0, s[4]]])
+		Sig3 = mat([[s[0], 0, 0, 0, 0], [0, s[1], 0, 0, 0], [0, 0, s[2], 0, 0], [0, 0, 0, s[3], 0], [0, 0, 0, 0, s[4]]])
 		#print Sig3
 		print "模拟原始矩阵"
-		newMat = mat(u[:,0:5]) * Sig3 * mat(vt[0:5,:])
+		newMat = mat(u[:, 0:5]) * Sig3 * mat(vt[0:5, :])
 		#print newMat
-		t =  mat(lsa.A) - newMat
+		t = mat(lsa.A) - newMat
 		print t
 
 	## 中文处理
@@ -51,7 +52,7 @@ class LSATest:
 		courses_name = [course.split('\t')[0] for course in courses]
 		print courses_name[0:2]
 
-		stopwords = ['and','edition','for','in','little','of','the','to','a','1','2','3','4']
+		stopwords = ['and', 'edition', 'for', 'in', 'little', 'of', 'the', 'to', 'a', '1', '2', '3', '4']
 		ignorechars = ''',:'!()&-'''
 		lsa = LSA(stopwords, ignorechars)
 
@@ -68,8 +69,8 @@ class LSATest:
 		print "奇异值矩阵为"
 		print u.shape, s.shape, vt.shape
 		print s
-		n90 = lsa.maxWeight(s , 0.9)
-		print "前项目占据了奇异值信息量的90%:",n90
+		n90 = lsa.maxWeight(s, 0.9)
+		print "前项目占据了奇异值信息量的90%:", n90
 
 		emptyMat = zeros(shape=(n90, n90))
 		i = 0
@@ -86,7 +87,7 @@ class LSATest:
 		texts = [line.strip() for line in file('data/LSA/wb_clean.txt')]
 		test_words = [course.split('\t') for course in texts]
 
-		stopwords = ['and','edition','for','in','little','of','the','to','a','1','2','3','4']
+		stopwords = ['and', 'edition', 'for', 'in', 'little', 'of', 'the', 'to', 'a', '1', '2', '3', '4']
 		ignorechars = ''',:'!()&-'''
 		lsa = LSA(stopwords, ignorechars)
 
@@ -100,9 +101,9 @@ class LSATest:
 		print "奇异值矩阵为"
 		print u.shape, s.shape, vt.shape
 		print s
-		n90 = lsa.maxWeight(s , 0.4)
-		print "前项目占据了奇异值信息量的90%:",n90
-		n90 = lsa.maxWeight(s , 0.5)
-		print "前项目占据了奇异值信息量的90%:",n90
-		n90 = lsa.maxWeight(s , 0.6)
-		print "前项目占据了奇异值信息量的90%:",n90
+		n90 = lsa.maxWeight(s, 0.4)
+		print "前项目占据了奇异值信息量的90%:", n90
+		n90 = lsa.maxWeight(s, 0.5)
+		print "前项目占据了奇异值信息量的90%:", n90
+		n90 = lsa.maxWeight(s, 0.6)
+		print "前项目占据了奇异值信息量的90%:", n90

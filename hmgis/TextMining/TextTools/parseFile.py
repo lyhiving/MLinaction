@@ -1,14 +1,11 @@
 # _*_ coding: utf-8 _*_
 
-import sys
-import os
 import re
 import jieba.posseg as pseg
 import jieba
 
 # 将CSV格式的微博文本数据转化为分词后的文本数据
 class parseCSV:
-
 	def __init__(self, stopwords, dict):
 		self.stopwords = stopwords
 		self.dict = dict

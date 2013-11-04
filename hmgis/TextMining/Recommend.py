@@ -1,8 +1,8 @@
 # _*_ coding: utf-8 _*_
 from hmgis.Test.SVDTest import *
 
-class Recommend:
 
+class Recommend:
 	## 欧式距离
 	def ecludSim(self, inA, inB):
 		return 1.0 / (1.0 + la.norm(inA - inB))

@@ -4,6 +4,7 @@ import jieba.posseg as pseg
 import jieba
 from hmgis.Classifier.Bayesian import *
 
+
 class BayesianTest:
 	def loadDataSet(self):
 		postingList = [['my', 'dog', 'has', 'flea', 'problems', 'help', 'please'],
@@ -35,11 +36,12 @@ class BayesianTest:
 		thisDoc = array(bayesian.setOfWords2Vec(myVocabList, testEntry))
 		print testEntry, '被分类为: ', bayesian.classifyNB(thisDoc, p0V, p1V, pAb)
 
+
 class RSSBayesianTest:
 	## 解析RSS源，返回实际的RSS数量
 	def loadRSS(self, webpage, file):
 		#OUT = "data/bayesian/rss/rss_junshi.txt"
-		f = open(file,"w")
+		f = open(file, "w")
 
 		import feedparser
 		#mil = feedparser.parse('http://mil.sohu.com/rss/junshi.xml')
@@ -47,10 +49,10 @@ class RSSBayesianTest:
 		count = 0
 		for entry in mil["entries"]:
 			title = entry["title"]
-			title = title.replace('\n','')
+			title = title.replace('\n', '')
 			txt = entry["summary_detail"]["value"]
-			txt = txt.replace('\n','')
-			if len(txt)>1 :
+			txt = txt.replace('\n', '')
+			if len(txt) > 1:
 				f.writelines(title + '。' + txt + "\n")
 				count = count + 1
 		f.close()
@@ -58,18 +60,20 @@ class RSSBayesianTest:
 
 	## 预处理从RSS源获得的数据
 	def preProcess(self, filepath, classtag):
-		import re
-		sentences = [line for line in file(filepath) if len(line)>1]
+
+		sentences = [line for line in file(filepath) if len(line) > 1]
 		jieba.load_userdict("lib/userdict")
 		## 使用jieba对文本进行分词
-		texts_tokenized = [[word for word in pseg.cut(document) if word.flag in ['n','nr','ns','nt','nz','nl','ng','eng','x'] ] for document in sentences]
+		texts_tokenized = [
+			[word for word in pseg.cut(document) if word.flag in ['n', 'nr', 'ns', 'nt', 'nz', 'nl', 'ng', 'eng', 'x']]
+			for document in sentences]
 		## 停用词
 		chnstopwordoc = [line.strip() for line in file('lib/chinesestopwords.txt')]
 		stoplist = [course for course in chnstopwordoc]
 		## 剔除停用词
 		texts_tokenized = [[word for word in document if not word.word in stoplist] for document in texts_tokenized]
 		## 剔除长度为1的词汇
-		wordlist = [[word.word for word in document if len(word.word)>1 ] for document in texts_tokenized]
+		wordlist = [[word.word for word in document if len(word.word) > 1] for document in texts_tokenized]
 		print len(wordlist)
 		labels = []
 		for i in range(0, len(wordlist)):
@@ -83,19 +87,20 @@ class RSSBayesianTest:
 
 	def testEntryProcess(self, text):
 		## 使用jieba对文本进行分词
-		texts_tokenized = [word for word in pseg.cut(text) if word.flag in ['n','nr','ns','nt','nz','nl','ng','eng','x']]
+		texts_tokenized = [word for word in pseg.cut(text) if
+		                   word.flag in ['n', 'nr', 'ns', 'nt', 'nz', 'nl', 'ng', 'eng', 'x']]
 		## 停用词
 		chnstopwordoc = [line.strip() for line in file('lib/chinesestopwords.txt')]
 		stoplist = [course for course in chnstopwordoc]
 		## 剔除停用词
 		texts_tokenized = [t.word for t in texts_tokenized if not t.word in stoplist]
 		## 剔除长度为1的词汇
-		wordlist = [document for document in texts_tokenized if len(document)>1]
+		wordlist = [document for document in texts_tokenized if len(document) > 1]
 		return wordlist
 
 	def loadProcessedData(self):
-		dataMat0,labels0 = self.preProcess('data/bayesian/rss/rss_junshi.txt',0)
-		dataMat1,labels1 = self.preProcess('data/bayesian/rss/rss_tiyu.txt',1)
+		dataMat0, labels0 = self.preProcess('data/bayesian/rss/rss_junshi.txt', 0)
+		dataMat1, labels1 = self.preProcess('data/bayesian/rss/rss_tiyu.txt', 1)
 		dataMat = dataMat0 + dataMat1
 		labels = labels0 + labels1
 		return dataMat, labels
@@ -124,7 +129,7 @@ class RSSBayesianTest:
 		testText = "美国军队的军舰今天访问了巴西港口城市，并首次展示了核潜艇攻击能力，飞机，监听。他们表演了足球。"
 		testEntry = self.testEntryProcess(testText)
 		thisDoc = array(bayesian.setOfWords2Vec(myVocabList, testEntry))
-		clabels = ['军事','体育']
+		clabels = ['军事', '体育']
 		print testText, 'classified as: ', clabels[bayesian.classifyNB(thisDoc, p0V, p1V, pAb)]
 
 
@@ -147,8 +152,8 @@ class RSSBayesianTest:
 			trainClasses.append(labels[docIndex])
 		p0V, p1V, pSpam = bayesian.trainNB0(array(trainMat), array(trainClasses))
 
-		clabels = ['军事','体育']
-		data = self.getData('data/bayesian/rss/rss_junshi.txt')+self.getData('data/bayesian/rss/rss_tiyu.txt')
+		clabels = ['军事', '体育']
+		data = self.getData('data/bayesian/rss/rss_junshi.txt') + self.getData('data/bayesian/rss/rss_tiyu.txt')
 		errorCount = 0
 		for docIndex in testSet:        #classify the remaining items
 			wordVector = bayesian.setOfWords2Vec(myVocabList, dataMat[docIndex])
@@ -171,6 +176,7 @@ class RSSBayesianTest:
 			trainMat.append(bayesian.setOfWords2Vec(myVocabList, postinDoc))
 
 		from sklearn.naive_bayes import GaussianNB
+
 		gnb = GaussianNB()
 		X = array(trainMat)
 		y = labels
@@ -182,7 +188,7 @@ class RSSBayesianTest:
 		thisDoc = array(bayesian.setOfWords2Vec(myVocabList, testEntry))
 		## 拟合并预测
 		y_pred = gnb.fit(X, y).predict(thisDoc)
-		clabels = ['军事','体育']
+		clabels = ['军事', '体育']
 		y_pred = gnb.fit(X, y).predict(X)
 		print("Number of mislabeled points : %d" % (labels != y_pred).sum())
 

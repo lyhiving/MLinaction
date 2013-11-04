@@ -1,11 +1,8 @@
 # _*_ coding: utf-8 _*_
 from numpy import *
-import matplotlib
-import matplotlib.pyplot as plt
 
 
 class Kmeans:
-
 	## 欧几里得距离
 	def distEclud(self, vecA, vecB):
 		return sqrt(sum(power(vecA - vecB, 2))) #la.norm(vecA-vecB)

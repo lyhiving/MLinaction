@@ -1,5 +1,7 @@
 # _*_ coding: utf-8 _*_
 from hmgis.TextMining.Recommend import *
+
+
 class RecommendTest:
 	## 加载简单数据
 	def loadExData(self):
@@ -49,7 +51,7 @@ class RecommendTest:
 		myMat = mat(self.loadExData())
 		## 以下为矩阵行数据的相似度测试
 		recom = Recommend()
-		print recom.ecludSim(myMat[:,0], myMat[:,4])
-		print recom.cosSim(myMat[:,0], myMat[:,4])
-		print recom.cosSim(myMat[0,:].T, myMat[4,:].T)
-		print recom.pearsSim(myMat[:,0], myMat[:,4])
+		print recom.ecludSim(myMat[:, 0], myMat[:, 4])
+		print recom.cosSim(myMat[:, 0], myMat[:, 4])
+		print recom.cosSim(myMat[0, :].T, myMat[4, :].T)
+		print recom.pearsSim(myMat[:, 0], myMat[:, 4])
