@@ -31,6 +31,24 @@ class LSA(object):
 				self.wdict[w] = [self.dcount]
 		self.dcount += 1
 
+	def parseChinese(self, infile):
+		"""
+		逐行解析中文文件中的字符串，最后生成一个词典【单词, 出现的文档list】
+		如[vesting, [1,2,3]
+		:param doc:
+		"""
+		texts = [line.strip() for line in file(infile)]
+		for text in texts:
+			for w in text.split('\t'):
+				if w in self.stopwords:
+					continue
+				elif w in self.wdict:
+					self.wdict[w].append(self.dcount)
+				else:
+					self.wdict[w] = [self.dcount]
+			self.dcount += 1
+
+
 	## 生成一个DTM矩阵
 	def build(self):
 		## 将只出现过1次的词汇剔除,keys中存储出现过两次及以上的词汇
@@ -45,7 +63,7 @@ class LSA(object):
 
 	def build2(self):
 		#print self.wdict.keys()
-		self.keys = [k for k in self.wdict.keys() if not k in self.stopwords]
+		self.keys = [k for k in self.wdict.keys() if len(self.wdict[k]) > 1]
 		self.keys.sort()
 		self.A = zeros([len(self.keys), self.dcount])
 		for i, k in enumerate(self.keys):

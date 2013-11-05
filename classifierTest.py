@@ -136,17 +136,16 @@ class ClassifierTest:
 	## LSA（LSI）测试
 	def LSATest(self):
 		lsa = LSATest()
-		lsa.simpleTest()
-
-	#lsa.corpusTest()
-	# lsa.weiboTest()
+		# lsa.simpleTest()
+		#lsa.corpusTest()
+		lsa.weiboTest()
 
 	## Gensim库的测试
 	def GensimTest(self):
 		gen = GensimTest()
-		gen.simple()
-		gen.simple2()
-		gen.GIS3SNewsTopic()
+		# gen.simple()
+		# gen.simple2()
+		# gen.GIS3SNewsTopic()
 		gen.weiboTopic()
 
 

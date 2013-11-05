@@ -93,15 +93,9 @@ class LSATest:
 		#p = parseCSV('lib/chinesestopwords.txt', 'lib/userdict')
 		#p.parse('data/LSA/jiangbt.csv', 'data/LSA/wb_clean.txt')
 
-		texts = [line.strip() for line in file('data/LSA/wb_clean.txt')]
-		test_words = [course.split('\t') for course in texts]
+		lsa = LSA([], [])
+		lsa.parseChinese('data/LSA/wb_clean.txt')
 
-		stopwords = ['and', 'edition', 'for', 'in', 'little', 'of', 'the', 'to', 'a', '1', '2', '3', '4']
-		ignorechars = ''',:'!()&-'''
-		lsa = LSA(stopwords, ignorechars)
-
-		for doc in test_words:
-			lsa.parse(doc)
 		lsa.build2()
 		lsa.printA()
 		lsa.TFIDF()
