@@ -26,15 +26,15 @@ class BayesianTest:
 		for postinDoc in listOPosts:
 			trainMat.append(bayesian.setOfWords2Vec(myVocabList, postinDoc))
 		## 计算已有数据集中的先验概率
-		p0V, p1V, pAb = bayesian.trainNB0(array(trainMat), array(listClasses))
+		p0V, p1V, pAb = bayesian.fit(array(trainMat), array(listClasses))
 
 		## 测试不同字符串的后验概率
 		testEntry = ['love', 'my', 'dalmation']
 		thisDoc = array(bayesian.setOfWords2Vec(myVocabList, testEntry))
-		print testEntry, '被分类为: ', bayesian.classifyNB(thisDoc, p0V, p1V, pAb)
+		print testEntry, '被分类为: ', bayesian.predict(thisDoc, p0V, p1V, pAb)
 		testEntry = ['stupid', 'garbage']
 		thisDoc = array(bayesian.setOfWords2Vec(myVocabList, testEntry))
-		print testEntry, '被分类为: ', bayesian.classifyNB(thisDoc, p0V, p1V, pAb)
+		print testEntry, '被分类为: ', bayesian.predict(thisDoc, p0V, p1V, pAb)
 
 
 class RSSBayesianTest:
@@ -123,14 +123,14 @@ class RSSBayesianTest:
 		for postinDoc in dataMat:
 			trainMat.append(bayesian.setOfWords2Vec(myVocabList, postinDoc))
 		## 计算已有数据集中的先验概率
-		p0V, p1V, pAb = bayesian.trainNB0(array(trainMat), array(labels))
+		p0V, p1V, pAb = bayesian.fit(array(trainMat), array(labels))
 
 		## 测试不同字符串的后验概率
 		testText = "美国军队的军舰今天访问了巴西港口城市，并首次展示了核潜艇攻击能力，飞机，监听。他们表演了足球。"
 		testEntry = self.testEntryProcess(testText)
 		thisDoc = array(bayesian.setOfWords2Vec(myVocabList, testEntry))
 		clabels = ['军事', '体育']
-		print testText, 'classified as: ', clabels[bayesian.classifyNB(thisDoc, p0V, p1V, pAb)]
+		print testText, 'classified as: ', clabels[bayesian.predict(thisDoc, p0V, p1V, pAb)]
 
 
 	## 交叉分类验证
@@ -150,14 +150,14 @@ class RSSBayesianTest:
 		for docIndex in trainingSet:#train the classifier (get probs) trainNB0
 			trainMat.append(bayesian.setOfWords2Vec(myVocabList, dataMat[docIndex]))
 			trainClasses.append(labels[docIndex])
-		p0V, p1V, pSpam = bayesian.trainNB0(array(trainMat), array(trainClasses))
+		p0V, p1V, pSpam = bayesian.fit(array(trainMat), array(trainClasses))
 
 		clabels = ['军事', '体育']
 		data = self.getData('data/bayesian/rss/rss_junshi.txt') + self.getData('data/bayesian/rss/rss_tiyu.txt')
 		errorCount = 0
 		for docIndex in testSet:        #classify the remaining items
 			wordVector = bayesian.setOfWords2Vec(myVocabList, dataMat[docIndex])
-			type = bayesian.classifyNB(array(wordVector), p0V, p1V, pSpam)
+			type = bayesian.predict(array(wordVector), p0V, p1V, pSpam)
 			if type != labels[docIndex]:
 				errorCount += 1
 				print "判断类型：", clabels[type]
@@ -227,11 +227,11 @@ class emailClassfier:
 		for docIndex in trainingSet:#train the classifier (get probs) trainNB0
 			trainMat.append(bayesian.setOfWords2Vec(vocabList, docList[docIndex]))
 			trainClasses.append(classList[docIndex])
-		p0V, p1V, pSpam = bayesian.trainNB0(array(trainMat), array(trainClasses))
+		p0V, p1V, pSpam = bayesian.fit(array(trainMat), array(trainClasses))
 		errorCount = 0
 		for docIndex in testSet:        #classify the remaining items
 			wordVector = bayesian.setOfWords2Vec(vocabList, docList[docIndex])
-			if bayesian.classifyNB(array(wordVector), p0V, p1V, pSpam) != classList[docIndex]:
+			if bayesian.predict(array(wordVector), p0V, p1V, pSpam) != classList[docIndex]:
 				errorCount += 1
 				print "分类错误", docList[docIndex]
 		print '错误率是: ', float(errorCount) / len(testSet)

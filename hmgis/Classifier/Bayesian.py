@@ -23,7 +23,7 @@ class Bayesian:
 
 	## 计算先验概率
 	## P(B|A) = P(B)P(A|B)/P(B)P(A|B) + P(C)P(A|C)
-	def trainNB0(self, trainMatrix, trainCategory):
+	def fit(self, trainMatrix, trainCategory):
 		numTrainDocs = len(trainMatrix)
 		numWords = len(trainMatrix[0])
 		## 先验概率
@@ -45,7 +45,7 @@ class Bayesian:
 		return p0Vect, p1Vect, pAbusive
 
 	## 比较概率
-	def classifyNB(self, vec2Classify, p0Vec, p1Vec, pClass1):
+	def predict(self, vec2Classify, p0Vec, p1Vec, pClass1):
 	## 由于所有类型的全概率都是一样的（分母一样），因此可以纯比分子
 		p1 = sum(vec2Classify * p1Vec) + log(pClass1)    #element-wise mult
 		p0 = sum(vec2Classify * p0Vec) + log(1.0 - pClass1)

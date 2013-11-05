@@ -4,7 +4,16 @@ from numpy import *
 
 
 class AdaBoost:
-	def stumpClassify(self, dataMatrix, dimen, threshVal, threshIneq):#just classify the data
+	def stumpClassify(self, dataMatrix, dimen, threshVal, threshIneq):
+		#just classify the data
+		"""
+
+		:param dataMatrix:
+		:param dimen:
+		:param threshVal:
+		:param threshIneq:
+		:return:
+		"""
 		retArray = ones((shape(dataMatrix)[0], 1))
 		if threshIneq == 'lt':
 			retArray[dataMatrix[:, dimen] <= threshVal] = -1.0
@@ -14,6 +23,13 @@ class AdaBoost:
 
 
 	def buildStump(self, dataArr, classLabels, D):
+		"""
+
+		:param dataArr:
+		:param classLabels:
+		:param D:
+		:return:
+		"""
 		dataMatrix = mat(dataArr);
 		labelMat = mat(classLabels).T
 		m, n = shape(dataMatrix)
@@ -43,11 +59,13 @@ class AdaBoost:
 		return bestStump, minError, bestClasEst
 
 
-	def adaBoostTrainDS(self, dataArr, classLabels, numIt=40):
+	def fit(self, dataArr, classLabels, numIt=40):
 		"""
-		:param dataArr:
-		:param classLabels:
-		:param numIt:
+
+		:rtype : object
+		:param dataArr: 培训数据集
+		:param classLabels: 培训数据标签
+		:param numIt: 迭代次数
 		:return:
 		"""
 		weakClassArr = []
@@ -75,7 +93,14 @@ class AdaBoost:
 
 		return weakClassArr, aggClassEst
 
-	def adaClassify(self, datToClass, classifierArr):
+
+	def predict(self, datToClass, classifierArr):
+		"""
+
+		:param datToClass:
+		:param classifierArr:
+		:return:
+		"""
 		dataMatrix = mat(datToClass)#do stuff similar to last aggClassEst in adaBoostTrainDS
 		m = shape(dataMatrix)[0]
 		aggClassEst = mat(zeros((m, 1)))
@@ -117,13 +142,3 @@ class AdaBoost:
 		ax.axis([0, 1, 0, 1])
 		plt.show()
 		print "the Area Under the Curve is: ", ySum * xStep
-
-
-## AdaBoost是采用Boosting方法来将弱分类器（比随机比例50%好不了多少）
-## 通过组合的方式来构成强分类器，提升分类水平
-if __name__ == "__main__":
-	adaboost = AdaBoost()
-
-	adaboost.adaboostTest()
-
-	#adaboost.scikitAdaboost()

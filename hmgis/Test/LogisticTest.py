@@ -18,7 +18,7 @@ class LogisticTest:
 		## 加载数据
 		dataArr, labelMat = self.loadDataSet(filename)
 		## 根据梯度下降法来计算拟合参数
-		weights = logic.gradAscent(dataArr, labelMat)
+		weights = logic.fit_gradAscent(dataArr, labelMat)
 		logic.plotBestfit(weights, dataArr, labelMat)
 
 	def calRandomGradAscent(self, filename):
@@ -26,7 +26,7 @@ class LogisticTest:
 		logic = LogisticDemo()
 		## 加载数据
 		dataArr, labelMat = self.loadDataSet(filename)
-		weights = logic.stocGradAscent0(array(dataArr), labelMat)
+		weights = logic.fit_stocGradAscent0(array(dataArr), labelMat)
 		logic.plotBestfit(weights, dataArr, labelMat)
 
 	def calRandomGradAscent2(self, filename):
@@ -34,7 +34,7 @@ class LogisticTest:
 		## 加载数据
 		dataArr, labelMat = self.loadDataSet(filename)
 		## 改进随机梯度，同样200次效果更好
-		weights = logic.stocGradAscent1(array(dataArr), labelMat, 200)
+		weights = logic.fit_stocGradAscent1(array(dataArr), labelMat, 200)
 		logic.plotBestfit(weights, dataArr, labelMat)
 
 	## 加载文件数据成矩阵，进行测试计算
@@ -53,7 +53,7 @@ class LogisticTest:
 			trainingLabels.append(float(currLine[21]))
 		## 对培训集进行训练
 		logic = LogisticDemo()
-		trainWeights = logic.stocGradAscent1(array(trainingSet), trainingLabels, 1000)
+		trainWeights = logic.fit_stocGradAscent1(array(trainingSet), trainingLabels, 1000)
 		errorCount = 0;
 		numTestVec = 0.0
 		## 读取测试集
@@ -64,7 +64,7 @@ class LogisticTest:
 			for i in range(21):
 				lineArr.append(float(currLine[i]))
 			## 测试函数
-			if int(logic.classifyVector(array(lineArr), trainWeights)) != int(currLine[21]):
+			if int(logic.predict(array(lineArr), trainWeights)) != int(currLine[21]):
 				errorCount += 1
 		errorRate = (float(errorCount) / numTestVec)
 		print "the error rate of this test is: %f" % errorRate

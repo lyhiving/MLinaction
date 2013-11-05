@@ -85,15 +85,14 @@ class SVMTest:
 		dataArr, labelArr = self.loadDataSet('data/svm/testSet.txt')
 		svm = SVMLib()
 		## 训练一个线性分类器
-		b, alphas = svm.smoP(dataArr, labelArr, 0.6, 0.001, 40)
-		ws = svm.calcWs(alphas, dataArr, labelArr)
+		ws, b = svm.fit(dataArr, labelArr, 0.6, 0.001, 40)
 		print ws
 		dataMat = mat(dataArr)
 		## 前半部分计算值为分类结果，后面为实际结果
 		## SVM分类器是个二元分类器，其结果为-1或1
 		## 因此训练时，训练集的值也为-1或1
 		print '-----------------'
-		print dataMat[0] * mat(ws) + b, labelArr[0]
+		print svm.predict(dataMat[0], ws, b), labelArr[0]
 
 	## 多属性线性分类器
 	def testMultiLinear(self):
@@ -102,8 +101,7 @@ class SVMTest:
 
 		svm = SVMLib()
 		## 训练一个线性分类器
-		b, alphas = svm.smoP(dataArr, labelArr, 0.6, 0.001, 40)
-		ws = svm.calcWs(alphas, dataArr, labelArr)
+		ws, b = svm.fit(dataArr, labelArr, 0.6, 0.001, 40)
 		print ws
 		dataMat = mat(dataArr)
 		## 前半部分计算值为分类结果，后面为实际结果
@@ -111,66 +109,58 @@ class SVMTest:
 		## 因此训练时，训练集的值也为-1或1
 		print '-----------------'
 		## 根据SVM判断第4个数据的分类，大于0为1，小于0为-1
-		print dataMat[3] * mat(ws) + b, labelArr[3]
+		print svm.predict(dataMat[3], ws, b), labelArr[3]
+
 
 	## rbf核函数分类器
-	def testRbf(self, k1=1.5):
+	def testRbf(self, kTup=('rbf', 1.5)):
 		dataArr, labelArr = self.loadDataSet('data/svm/testSetRBF.txt')
 
 		svm = SVMLib()
-		b, alphas = svm.smoP(dataArr, labelArr, 200, 0.0001, 10000, ('rbf', k1)) #C=200 important
 		datMat = mat(dataArr);
-		labelMat = mat(labelArr).transpose()
-		svInd = nonzero(alphas.A > 0)[0]
-		sVs = datMat[svInd] #get matrix of only support vectors
-		labelSV = labelMat[svInd];
-		print "there are %d Support Vectors" % shape(sVs)[0]
+		## 训练数据
+		RBF = svm.fit_RBF(dataArr, labelArr, 200, 0.0001, 10000, kTup)
+		print RBF.b, '----', RBF.alphas
+		print "支持向量数量为 %d " % shape(RBF.sVs)[0]
 		m, n = shape(datMat)
 		errorCount = 0
 		for i in range(m):
-			kernelEval = kernelTrans(sVs, datMat[i, :], ('rbf', k1))
-			predict = kernelEval.T * multiply(labelSV, alphas[svInd]) + b
+			## 测试数据
+			predict = svm.predict_RBF(RBF, datMat[i, :], kTup)
 			if sign(predict) != sign(labelArr[i]): errorCount += 1
-		print "the training error rate is: %f" % (float(errorCount) / m)
-
+		print "培训集错误率: %f" % (float(errorCount) / m)
+		#
 		dataArr, labelArr = self.loadDataSet('data/svm/testSetRBF2.txt')
 		errorCount = 0
 		datMat = mat(dataArr);
-		labelMat = mat(labelArr).transpose()
 		m, n = shape(datMat)
 		for i in range(m):
-			kernelEval = kernelTrans(sVs, datMat[i, :], ('rbf', k1))
-			predict = kernelEval.T * multiply(labelSV, alphas[svInd]) + b
+			predict = svm.predict_RBF(RBF, datMat[i, :], kTup)
 			if sign(predict) != sign(labelArr[i]): errorCount += 1
-		print "the test error rate is: %f" % (float(errorCount) / m)
+		print "训练集错误率: %f" % (float(errorCount) / m)
 
 	## rbf核函数分类器
 	def testDigits(self, kTup=('rbf', 10)):
 		dataArr, labelArr = self.loadImages('data/svm/trainingDigits')
 
 		svm = SVMLib()
-		b, alphas = svm.smoP(dataArr, labelArr, 200, 0.0001, 10000, kTup) #C=200 important
+		RBF = svm.fit_RBF(dataArr, labelArr, 200, 0.0001, 10000, kTup)
+		print RBF.b, '----'
 		datMat = mat(dataArr);
-		labelMat = mat(labelArr).transpose()
-		svInd = nonzero(alphas.A > 0)[0]
-		sVs = datMat[svInd] #get matrix of only support vectors
-		labelSV = labelMat[svInd];
-		print "there are %d Support Vectors" % shape(sVs)[0]
+		print "there are %d Support Vectors" % shape(RBF.sVs)[0]
 		m, n = shape(datMat)
 		errorCount = 0
 		for i in range(m):
-			kernelEval = kernelTrans(sVs, datMat[i, :], kTup)
-			predict = kernelEval.T * multiply(labelSV, alphas[svInd]) + b
+			predict = svm.predict_RBF(RBF, datMat[i, :], kTup)
 			if sign(predict) != sign(labelArr[i]): errorCount += 1
 		print "the training error rate is: %f" % (float(errorCount) / m)
-		dataArr, labelArr = self.loadImages('data/svm/trainingDigits')
+
+		dataArr, labelArr = self.loadImages('data/svm/testDigits')
 		errorCount = 0
 		datMat = mat(dataArr);
-		labelMat = mat(labelArr).transpose()
 		m, n = shape(datMat)
 		for i in range(m):
-			kernelEval = kernelTrans(sVs, datMat[i, :], kTup)
-			predict = kernelEval.T * multiply(labelSV, alphas[svInd]) + b
+			predict = svm.predict_RBF(RBF, datMat[i, :], kTup)
 			if sign(predict) != sign(labelArr[i]): errorCount += 1
 		print "the test error rate is: %f" % (float(errorCount) / m)
 

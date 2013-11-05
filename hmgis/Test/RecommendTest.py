@@ -55,3 +55,4 @@ class RecommendTest:
 		print recom.cosSim(myMat[:, 0], myMat[:, 4])
 		print recom.cosSim(myMat[0, :].T, myMat[4, :].T)
 		print recom.pearsSim(myMat[:, 0], myMat[:, 4])
+

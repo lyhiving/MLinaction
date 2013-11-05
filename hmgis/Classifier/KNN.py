@@ -9,7 +9,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 
 class KNNDemo:
-	def classify0(self, inX, dataSet, labels, k):
+	def predict(self, inX, dataSet, labels, k):
 		"""
 		分类器
 		:param inX: 需要分类的数据

@@ -1,5 +1,6 @@
 # _*_ coding: utf-8 _*_
 from numpy import *
+from scipy.stats import *
 from hmgis.TextMining.LSA import *
 
 
@@ -29,6 +30,10 @@ class LSATest:
 		lsa.TFIDF()
 		## 输出TF-IDF权重
 		lsa.printA()
+		print '计算两个词汇estate与market的Spearman Rank Corralation相关性'
+		w1 = lsa.A[3]
+		w2 = lsa.A[6]
+		print spearmanr(w1, w2)[0]
 		print '----------------------'
 		## 计算SVD
 		u, s, vt = lsa.calc()
@@ -42,9 +47,13 @@ class LSATest:
 		#print Sig3
 		print "模拟原始矩阵"
 		newMat = mat(u[:, 0:5]) * Sig3 * mat(vt[0:5, :])
-		#print newMat
+		print newMat
+		print '两个矩阵之差'
 		t = mat(lsa.A) - newMat
 		print t
+		w1 = asarray(newMat[3, :])[0]
+		w2 = asarray(newMat[6, :])[0]
+		print spearmanr(w1, w2)[0]
 
 	## 中文处理
 	def corpusTest(self):

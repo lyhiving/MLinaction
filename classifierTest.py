@@ -56,14 +56,14 @@ class ClassifierTest:
 	def bayesianTest(self):
 		bayesian = BayesianTest()
 		listOPosts, listClasses = bayesian.loadDataSet()
-		## 最简单的贝叶斯分类
-		bayesian.testingNB()
-		## 从RSS文件中进行分类
+		# ## 最简单的贝叶斯分类
+		# bayesian.testingNB()
+		# ## 从RSS文件中进行分类
 		rssBayesian = RSSBayesianTest()
-		rssBayesian.SingleClassifier()
-		rssBayesian.scikitNBClassfier()
-		rssBayesian.crossValidClassifier()
-		## 对email数据进行分类
+		# rssBayesian.SingleClassifier()
+		# rssBayesian.scikitNBClassfier()
+		# rssBayesian.crossValidClassifier()
+		# ## 对email数据进行分类
 		emailBayesian = emailClassfier()
 		emailBayesian.spamTest(bayesian)
 
@@ -85,19 +85,21 @@ class ClassifierTest:
 	def svmTest(self):
 		svm = SVMTest()
 		## 线性SVM
-		svm.testLinear()
-		svm.testMultiLinear()
-		## RBF核函数
-		svm.testRbf(2)
+		# svm.testLinear()
+		# svm.testMultiLinear()
+		# ## RBF核函数
+		# svm.testRbf(('rbf', 1.5))
 		svm.testDigits(('rbf', 50))
-		## SciKit中的SVM方法
-		svm.testSciKitSVM()
+
+	# ## SciKit中的SVM方法
+	# svm.testSciKitSVM()
 
 	## Boost类型分类，它将一个简单的弱分类器单根决策树构成了一个强分类器
 	def adaBoostTest(self):
 		ada = AdaBoostTest()
-		#ada.adaboostTest()
-		ada.scikitAdaboost()
+		ada.adaboostTest()
+
+	#ada.scikitAdaboost()
 
 	## 回归分析
 	def regressionTest(self):
@@ -134,9 +136,10 @@ class ClassifierTest:
 	## LSA（LSI）测试
 	def LSATest(self):
 		lsa = LSATest()
-		#lsa.simpleTest()
-		#lsa.corpusTest()
-		lsa.weiboTest()
+		lsa.simpleTest()
+
+	#lsa.corpusTest()
+	# lsa.weiboTest()
 
 	## Gensim库的测试
 	def GensimTest(self):
@@ -145,9 +148,6 @@ class ClassifierTest:
 		gen.simple2()
 		gen.GIS3SNewsTopic()
 		gen.weiboTopic()
-		## 两个词汇之间的相关性Spearman Rank Corralation公式
-		a = [1, 0, 0, 1, 0, 0, 0, 0, 0]
-		b = [0, 1, 1, 0, 1, 0, 0, 0, 0]
 
 
 if __name__ == "__main__":
@@ -156,15 +156,15 @@ if __name__ == "__main__":
 	sys.getfilesystemencoding()
 
 	classifier = ClassifierTest()
-	classifier.knnTest()
+	# classifier.knnTest()
 	#classifier.dtTest()
-	#classifier.bayesianTest()
-	#classifier.logisticTest()
-	#classifier.svmTest()
-	#classifier.adaBoostTest()
-	#classifier.regressionTest()
+	# classifier.bayesianTest()
+	# classifier.logisticTest()
+	# classifier.svmTest()
+	# classifier.adaBoostTest()
+	# classifier.regressionTest()
 	#classifier.kmeansTest()
 	#classifier.SVDTest()
-	#classifier.recommendTest()
-	#classifier.LSATest()
+	# classifier.recommendTest()
+	classifier.LSATest()
 	#classifier.GensimTest()

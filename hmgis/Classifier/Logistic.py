@@ -10,7 +10,7 @@ class LogisticDemo:
 
 	## 梯度下降法求最佳拟合参数
 	## 拟合了500次
-	def gradAscent(self, dataMatIn, classLabels):
+	def fit_gradAscent(self, dataMatIn, classLabels):
 		dataMatrix = mat(dataMatIn)             #convert to NumPy matrix
 		labelMat = mat(classLabels).transpose() #convert to NumPy matrix
 		m, n = shape(dataMatrix)
@@ -27,7 +27,7 @@ class LogisticDemo:
 
 	## 随机梯度
 	## 拟合200次
-	def stocGradAscent0(self, dataMatrix, classLabels):
+	def fit_stocGradAscent0(self, dataMatrix, classLabels):
 		m, n = shape(dataMatrix)
 		alpha = 0.01
 		weights = ones(n)   #initialize to all ones
@@ -38,7 +38,7 @@ class LogisticDemo:
 		return weights
 
 	## 改进随机梯度
-	def stocGradAscent1(self, dataMatrix, classLabels, numIter=150):
+	def fit_stocGradAscent1(self, dataMatrix, classLabels, numIter=150):
 		m, n = shape(dataMatrix)
 		weights = ones(n)   #initialize to all ones
 		for j in range(numIter):
@@ -85,7 +85,7 @@ class LogisticDemo:
 		plt.show()
 
 	## 计算分类
-	def classifyVector(self, inX, weights):
+	def predict(self, inX, weights):
 		prob = self.sigmoid(sum(inX * weights))
 		if prob > 0.5:
 			return 1.0

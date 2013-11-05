@@ -2,7 +2,7 @@
 
 from numpy import *
 
-
+## 回归方程
 class Regression:
 	def standRegres(self, xArr, yArr):
 		xMat = mat(xArr);

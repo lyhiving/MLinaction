@@ -1,45 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c56946a-0648-46c2-920a-afae2bbee770" name="Default" comment="10.4第2次调整">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/TextTools/getRSSInfo.py" />
+    <list default="true" id="5c56946a-0648-46c2-920a-afae2bbee770" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/TextTools/downloadFile.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/Classifier/AdaBoost.py" afterPath="$PROJECT_DIR$/hmgis/Classifier/AdaBoost.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/Test/AdaBoostTest.py" afterPath="$PROJECT_DIR$/hmgis/Test/AdaBoostTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/Classifier/Bayesian.py" afterPath="$PROJECT_DIR$/hmgis/Classifier/Bayesian.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/Test/BayesianTest.py" afterPath="$PROJECT_DIR$/hmgis/Test/BayesianTest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/Classifier/KNN.py" afterPath="$PROJECT_DIR$/hmgis/Classifier/KNN.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/Test/KNNTest.py" afterPath="$PROJECT_DIR$/hmgis/Test/KNNTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/TextMining/LSA.py" afterPath="$PROJECT_DIR$/hmgis/TextMining/LSA.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/Test/LSATest.py" afterPath="$PROJECT_DIR$/hmgis/Test/LSATest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/Classifier/Logistic.py" afterPath="$PROJECT_DIR$/hmgis/Classifier/Logistic.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/Test/LogisticTest.py" afterPath="$PROJECT_DIR$/hmgis/Test/LogisticTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/Test/RecommendTest.py" afterPath="$PROJECT_DIR$/hmgis/Test/RecommendTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/Classifier/Regression.py" afterPath="$PROJECT_DIR$/hmgis/Classifier/Regression.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/Test/SVDTest.py" afterPath="$PROJECT_DIR$/hmgis/Test/SVDTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/Classifier/SVM.py" afterPath="$PROJECT_DIR$/hmgis/Classifier/SVM.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/Test/SVMTest.py" afterPath="$PROJECT_DIR$/hmgis/Test/SVMTest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classifierTest.py" afterPath="$PROJECT_DIR$/classifierTest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MLinaction.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/KNN.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383295240125" ignored="false" />
+    <file path="/KNN.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383614880562" ignored="false" />
     <file path="/DecisionTree.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383296674460" ignored="false" />
-    <file path="/Bayesian.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383316618218" ignored="false" />
+    <file path="/Bayesian.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383615069788" ignored="false" />
     <file path="/test.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383039031255" ignored="false" />
     <file path="/userdict" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383033049794" ignored="false" />
     <file path="/a.dummy" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383033654449" ignored="false" />
     <file path="/RSSClassifier.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383141754459" ignored="false" />
-    <file path="/Logistic.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383318986401" ignored="false" />
-    <file path="/SVM.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383322164106" ignored="false" />
+    <file path="/Logistic.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383615735278" ignored="false" />
+    <file path="/SVM.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383620115103" ignored="false" />
     <file path="/SVM_Scikit.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383100281835" ignored="false" />
     <file path="/testSet.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383100199830" ignored="false" />
-    <file path="/AdaBoost.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383322853755" ignored="false" />
+    <file path="/AdaBoost.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383614557044" ignored="false" />
     <file path="/README.md" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383298002261" ignored="false" />
-    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383577391444" ignored="false" />
-    <file path="/Regression.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383147398633" ignored="false" />
+    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383637828848" ignored="false" />
+    <file path="/Regression.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383638152509" ignored="false" />
     <file path="/KMean.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383185652923" ignored="false" />
     <file path="/SVD.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383377029445" ignored="false" />
-    <file path="/LSA.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383378016154" ignored="false" />
+    <file path="/LSA.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383641179157" ignored="false" />
     <file path="/parseCSV.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383293002734" ignored="false" />
     <file path="$PROJECT_DIR$/../Gensim/generationCorpus.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383291971178" ignored="false" />
-    <file path="/classifierTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383576271251" ignored="false" />
-    <file path="/KNNTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383577290081" ignored="false" />
-    <file path="/BayesianTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383317573634" ignored="false" />
-    <file path="/LogisticTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383319498523" ignored="false" />
-    <file path="/SVMTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383322545140" ignored="false" />
-    <file path="/AdaBoostTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383365703077" ignored="false" />
+    <file path="/classifierTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383623378911" ignored="false" />
+    <file path="/KNNTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383614907063" ignored="false" />
+    <file path="/BayesianTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383615196741" ignored="false" />
+    <file path="/LogisticTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383615770563" ignored="false" />
+    <file path="/SVMTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383623348776" ignored="false" />
+    <file path="/AdaBoostTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383614344152" ignored="false" />
     <file path="/RegressionTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383366065750" ignored="false" />
     <file path="/KMeansTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383368168605" ignored="false" />
     <file path="/Recommend.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383369411649" ignored="false" />
-    <file path="/LSATest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383379254824" ignored="false" />
+    <file path="/LSATest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383642138440" ignored="false" />
     <file path="/RecommendTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383377617393" ignored="false" />
     <file path="$PROJECT_DIR$/../Gensim/tmp/deerwester.dict" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383379425763" ignored="false" />
     <file path="/VSM.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383384285071" ignored="false" />
@@ -50,6 +63,8 @@
     <file path="/a.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383557571961" ignored="false" />
     <file path="/start_script.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383557503980" ignored="false" />
     <file path="/getRSSInfo.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383576397849" ignored="false" />
+    <file path="/downloadFile.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383637915404" ignored="false" />
+    <file path="/SVDTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383638362213" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,30 +87,19 @@
       <file leaf-file-name="classifierTest.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classifierTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="4" selection-start="3601" selection-end="3601" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#243#253#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KNN.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hmgis/Classifier/KNN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="25" selection-start="674" selection-end="674" vertical-scroll-proportion="0.5968689">
-              <folding>
-                <element signature="e#41#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KNNTest.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hmgis/Test/KNNTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="0" selection-start="3424" selection-end="3424" vertical-scroll-proportion="0.0">
+            <state line="165" column="0" selection-start="3855" selection-end="3855" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LSATest.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hmgis/Test/LSATest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="31" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.3498452">
+              <folding>
+                <element signature="e#24#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,28 +122,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/hmgis/Test/KMeansTest.py" />
-        <option value="$PROJECT_DIR$/hmgis/TextMining/SVD.py" />
-        <option value="$PROJECT_DIR$/hmgis/TextMining/Recommend.py" />
-        <option value="$PROJECT_DIR$/hmgis/Test/RecommendTest.py" />
-        <option value="$PROJECT_DIR$/hmgis/TextMining/LSA.py" />
-        <option value="$PROJECT_DIR$/hmgis/TextMining/TextTools/__init__.py" />
-        <option value="$PROJECT_DIR$/hmgis/Test/LSATest.py" />
-        <option value="$PROJECT_DIR$/hmgis/Test/GensimTest/__init__.py" />
-        <option value="$PROJECT_DIR$/hmgis/Test/GensimTest/VSM.py" />
-        <option value="$PROJECT_DIR$/hmgis/TextMining/TextTools/parseFile.py" />
-        <option value="$PROJECT_DIR$/hmgis/Test/GensimTest/SimpledocTest.py" />
-        <option value="$PROJECT_DIR$/hmgis/Classifier/SVM.py" />
-        <option value="$PROJECT_DIR$/hmgis/TextMining/TextTools/getRSSInfo.py" />
+        <option value="$PROJECT_DIR$/hmgis/Classifier/AdaBoost.py" />
         <option value="$PROJECT_DIR$/hmgis/Classifier/KNN.py" />
         <option value="$PROJECT_DIR$/hmgis/Test/KNNTest.py" />
+        <option value="$PROJECT_DIR$/hmgis/Classifier/Bayesian.py" />
+        <option value="$PROJECT_DIR$/hmgis/Test/BayesianTest.py" />
+        <option value="$PROJECT_DIR$/hmgis/Classifier/Logistic.py" />
+        <option value="$PROJECT_DIR$/hmgis/Test/LogisticTest.py" />
+        <option value="$PROJECT_DIR$/hmgis/Classifier/SVM.py" />
+        <option value="$PROJECT_DIR$/hmgis/Test/SVMTest.py" />
+        <option value="$PROJECT_DIR$/hmgis/TextMining/TextTools/downloadFile.py" />
+        <option value="$PROJECT_DIR$/hmgis/Classifier/Regression.py" />
+        <option value="$PROJECT_DIR$/hmgis/Test/SVDTest.py" />
         <option value="$PROJECT_DIR$/classifierTest.py" />
+        <option value="$PROJECT_DIR$/hmgis/TextMining/LSA.py" />
+        <option value="$PROJECT_DIR$/hmgis/Test/RecommendTest.py" />
+        <option value="$PROJECT_DIR$/hmgis/Test/LSATest.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="8" />
+    <option name="y" value="22" />
+    <option name="width" value="1369" />
+    <option name="height" value="792" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -183,58 +189,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hmgis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hmgis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Classifier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -275,6 +229,80 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MLinaction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MLinaction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MLinaction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MLinaction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MLinaction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hmgis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MLinaction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MLinaction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hmgis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TextMining" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MLinaction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MLinaction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hmgis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,16 +319,16 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="164" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="949" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="945" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="949" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="161" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="157" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FullScreen" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -329,7 +357,7 @@
       <recent name="$PROJECT_DIR$/hmgis/Clustering" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.getRSSInfo">
+  <component name="RunManager" selected="Python.classifierTest">
     <configuration default="false" name="classifierTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -348,25 +376,6 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="AdaBoost" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MLinaction" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hmgis/Classifier/AdaBoost.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -422,6 +431,25 @@
       <module name="MLinaction" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hmgis/TextMining/TextTools/getRSSInfo.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="downloadFile" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hmgis/TextMining/TextTools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MLinaction" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hmgis/TextMining/TextTools/downloadFile.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -488,18 +516,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.classifierTest" />
-      <item index="1" class="java.lang.String" itemvalue="Python.AdaBoost" />
-      <item index="2" class="java.lang.String" itemvalue="Python.KMean" />
-      <item index="3" class="java.lang.String" itemvalue="Python.SimpledocTest" />
-      <item index="4" class="java.lang.String" itemvalue="Python.getRSSInfo" />
+      <item index="1" class="java.lang.String" itemvalue="Python.KMean" />
+      <item index="2" class="java.lang.String" itemvalue="Python.SimpledocTest" />
+      <item index="3" class="java.lang.String" itemvalue="Python.getRSSInfo" />
+      <item index="4" class="java.lang.String" itemvalue="Python.downloadFile" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.getRSSInfo" />
-        <item index="1" class="java.lang.String" itemvalue="Python.classifierTest" />
-        <item index="2" class="java.lang.String" itemvalue="Python.SimpledocTest" />
-        <item index="3" class="java.lang.String" itemvalue="Python.KMean" />
-        <item index="4" class="java.lang.String" itemvalue="Python.AdaBoost" />
+        <item index="0" class="java.lang.String" itemvalue="Python.classifierTest" />
+        <item index="1" class="java.lang.String" itemvalue="Python.downloadFile" />
+        <item index="2" class="java.lang.String" itemvalue="Python.getRSSInfo" />
+        <item index="3" class="java.lang.String" itemvalue="Python.SimpledocTest" />
+        <item index="4" class="java.lang.String" itemvalue="Python.KMean" />
       </list>
     </recent_temporary>
   </component>
@@ -555,7 +583,11 @@
       <created>1383558893809</created>
       <updated>1383558893809</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="10.4第2次调整">
+      <created>1383577460617</created>
+      <updated>1383577460617</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -579,24 +611,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="8" y="22" width="1369" height="792" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740742" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740742" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21018651" sideWeight="0.670398" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2374462" sideWeight="0.74751246" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4941691" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23204838" sideWeight="0.8293769" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24338624" sideWeight="0.54599404" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41691396" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1477438" sideWeight="0.27596438" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25248757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45400593" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32743362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32647058" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39520958" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -608,7 +640,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
       <value>
@@ -664,107 +696,116 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="164" />
+      <option name="time" value="183" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hmgis/Test/GensimTest/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/corpus.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/gensim/3snews">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="10" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/LSA/wb_clean.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/Test/GensimTest/SimpledocTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="228" column="24" selection-start="7468" selection-end="7468" vertical-scroll-proportion="0.7613636" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/TextMining/LSA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="44" selection-start="1764" selection-end="1764" vertical-scroll-proportion="1.5" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/Test/LSATest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="42" selection-start="625" selection-end="625" vertical-scroll-proportion="-0.101580136" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/Test/DecisionTreeTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.887324" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.5185951" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hmgis/Test/BayesianTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="204" column="23" selection-start="7119" selection-end="7119" vertical-scroll-proportion="-0.31460676" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hmgis/Classifier/Bayesian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="39" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.61573035" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hmgis/Test/LogisticTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="41" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.5280899" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hmgis/Classifier/Logistic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="15" selection-start="2572" selection-end="2572" vertical-scroll-proportion="0.6741573" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/Classifier/SVM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="25" selection-start="2914" selection-end="2914" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm20/python_stubs/596071422/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4986" column="8" selection-start="169686" selection-end="169686" vertical-scroll-proportion="0.33281735">
+        <state line="244" column="45" selection-start="9214" selection-end="9214" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/TextMining/TextTools/getRSSInfo.py">
+    <entry file="file://$PROJECT_DIR$/hmgis/TextMining/TextTools/downloadFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="32" selection-start="269" selection-end="269" vertical-scroll-proportion="0.28893906">
+        <state line="17" column="52" selection-start="316" selection-end="316" vertical-scroll-proportion="-0.51898736">
           <folding>
-            <element signature="e#26#42#0" expanded="true" />
+            <element signature="e#25#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/TextMining/TextTools/parseFile.py">
+    <entry file="file://$PROJECT_DIR$/hmgis/Test/RegressionTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0">
+        <state line="69" column="42" selection-start="1733" selection-end="1733" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#24#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hmgis/Classifier/Regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="4" selection-start="832" selection-end="832" vertical-scroll-proportion="0.7627119">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/Test/KNNTest.py">
+    <entry file="file://$PROJECT_DIR$/hmgis/Test/SVMTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="0" selection-start="3424" selection-end="3424" vertical-scroll-proportion="0.0">
+        <state line="166" column="4" selection-start="4574" selection-end="4574" vertical-scroll-proportion="1.369863">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hmgis/TextMining/Recommend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="8" selection-start="174" selection-end="174" vertical-scroll-proportion="-2.0931506">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classifierTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="4" selection-start="3601" selection-end="3601" vertical-scroll-proportion="0.0">
+        <state line="165" column="0" selection-start="3855" selection-end="3855" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hmgis/Test/RecommendTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="56" selection-start="1813" selection-end="1813" vertical-scroll-proportion="2.2054794">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hmgis/TextMining/LSA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="25" selection-start="1804" selection-end="1804" vertical-scroll-proportion="1.1643835">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hmgis/Test/SVDTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="10" selection-start="87" selection-end="87" vertical-scroll-proportion="-0.47945204">
           <folding>
-            <element signature="e#243#253#0" expanded="true" />
+            <element signature="e#25#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/Classifier/KNN.py">
+    <entry file="file://$PROJECT_DIR$/hmgis/Test/LSATest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="25" selection-start="674" selection-end="674" vertical-scroll-proportion="0.5968689">
+        <state line="51" column="31" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.3498452">
           <folding>
-            <element signature="e#41#56#0" expanded="true" />
+            <element signature="e#24#43#0" expanded="true" />
           </folding>
         </state>
       </provider>

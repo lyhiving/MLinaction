@@ -43,7 +43,7 @@ class KNNTest:
 		"""
 		knn = KNNDemo()
 		group, labels = self.createDataSet()
-		print "原生分类器,[0,1]的分类结果为", knn.classify0([0, 1], group, labels, 3)
+		print "原生分类器,[0,1]的分类结果为", knn.predict([0, 1], group, labels, 3)
 		## scikit learn代码
 		neigh = KNeighborsClassifier(n_neighbors=3)
 		neigh.fit(group, labels)
@@ -85,7 +85,7 @@ class KNNTest:
 		errorCount = 0.0
 		for i in range(numTestVecs):
 			## 第一个参数为要测试的元素，第二个为训练集，第三个为训练集类型，第四个为K参数
-			classifierResult = knn.classify0(normMat[i, :], normMat[numTestVecs:m, :], datingLabels[numTestVecs:m], 3)
+			classifierResult = knn.predict(normMat[i, :], normMat[numTestVecs:m, :], datingLabels[numTestVecs:m], 3)
 			print "分类结果为: %d, 实际结果为: %d" % (classifierResult, datingLabels[i])
 			if (classifierResult != datingLabels[i]): errorCount += 1.0
 		print "总错误率为: %f" % (errorCount / float(numTestVecs))

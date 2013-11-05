@@ -18,6 +18,15 @@ def kernelTrans(X, A, kTup): #calc the kernel or transform data to a higher dime
 	return K
 
 
+class RBF:
+	def __init__(self, svInd, sVs, labelSV, alphas, b):
+		self.svInd = svInd
+		self.sVs = sVs
+		self.labelSV = labelSV
+		self.alphas = alphas
+		self.b = b
+
+
 class SVMLib:
 	def selectJrand(self, i, m):
 		j = i #we want to select any J not equal to i
@@ -216,3 +225,27 @@ class SVMLib:
 		for i in range(m):
 			w += multiply(alphas[i] * labelMat[i], X[i, :].T)
 		return w
+
+	def fit(self, dataMatIn, classLabels, C, toler, maxIter, kTup=('lin', 0)):
+		b, alpha = self.smoP(dataMatIn, classLabels, C, toler, maxIter, kTup=('lin', 0))
+		return self.calcWs(alpha, dataMatIn, classLabels), b
+
+	def predict(self, data, w, b):
+		return data * mat(w) + b
+
+	def fit_RBF(self, dataArr, labelArr, C, toler, maxIter, kTup):
+		b, alphas = self.smoP(dataArr, labelArr, C, toler, maxIter, kTup)
+		#C=200 important
+		dataMatIn = mat(dataArr);
+		svInd = nonzero(alphas.A > 0)[0]
+		sVs = dataMatIn[svInd] #get matrix of only support vectors
+		labelMat = mat(labelArr).transpose()
+		labelSV = labelMat[svInd];
+
+		return RBF(svInd, sVs, labelSV, alphas, b)
+
+	def predict_RBF(self, RBF, datMat, kTup):
+		kernelEval = kernelTrans(RBF.sVs, datMat, kTup)
+		predict = kernelEval.T * multiply(RBF.labelSV, RBF.alphas[RBF.svInd]) + RBF.b
+		return predict
+
