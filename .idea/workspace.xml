@@ -19,7 +19,7 @@
     <file path="/testSet.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383100199830" ignored="false" />
     <file path="/AdaBoost.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383614557044" ignored="false" />
     <file path="/README.md" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383298002261" ignored="false" />
-    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383757925748" ignored="false" />
+    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383786599167" ignored="false" />
     <file path="/Regression.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383638152509" ignored="false" />
     <file path="/KMean.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383185652923" ignored="false" />
     <file path="/SVD.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383377029445" ignored="false" />
@@ -116,10 +116,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-3" />
-    <option name="y" value="27" />
+    <option name="y" value="22" />
     <option name="width" value="1369" />
-    <option name="height" value="792" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -355,16 +354,16 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="164" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="949" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="945" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="949" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="161" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="157" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -637,7 +636,11 @@
       <created>1383757929715</created>
       <updated>1383757929715</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="10.7第1次调整">
+      <created>1383757939449</created>
+      <updated>1383757939449</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -661,16 +664,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="27" width="1369" height="792" extended-state="0" />
+    <frame x="0" y="22" width="1369" height="788" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39434522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740742" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740742" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264095" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955405" sideWeight="0.54761904" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23204838" sideWeight="0.63244045" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1632653" sideWeight="0.6056548" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16553289" sideWeight="0.6056548" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44940478" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1477438" sideWeight="0.27596438" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -679,6 +680,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264095" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39434522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -764,112 +767,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/TextMining/LSA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="1670" selection-end="1670" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="71" column="0" selection-start="1670" selection-end="1670" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/TextMining/PLSA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="0" selection-start="4447" selection-end="4447" vertical-scroll-proportion="0.1764706">
-          <folding>
-            <element signature="e#25#36#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="135" column="0" selection-start="4447" selection-end="4447" vertical-scroll-proportion="0.1764706" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/Test/LSATest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="19" selection-start="2793" selection-end="2793" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="100" column="19" selection-start="2793" selection-end="2793" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file:///Library/Python/2.7/site-packages/weibo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="0" selection-start="5586" selection-end="5586" vertical-scroll-proportion="0.1721959">
-          <folding />
-        </state>
+        <state line="171" column="0" selection-start="5586" selection-end="5586" vertical-scroll-proportion="0.1721959" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/initClient/token-record.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.023219815">
-          <folding />
-        </state>
+        <state line="1" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.023219815" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/initClient/initclient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1251" selection-end="1251" vertical-scroll-proportion="1.773163">
-          <folding />
-        </state>
+        <state line="37" column="0" selection-start="1251" selection-end="1251" vertical-scroll-proportion="1.773163" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/initClient/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="21" selection-start="179" selection-end="179" vertical-scroll-proportion="0.3376206">
-          <folding />
-        </state>
+        <state line="7" column="21" selection-start="179" selection-end="179" vertical-scroll-proportion="0.3376206" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/weibo/jiangbt_comment.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="24" selection-start="316" selection-end="316" vertical-scroll-proportion="-2.7777777">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="24" selection-start="316" selection-end="316" vertical-scroll-proportion="-2.7777777" />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/weibo/jiangbt_post.txt">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sinaweiboTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="25" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.43324938">
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="57" column="25" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.43324938" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/sinaweiboClient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="35" selection-start="5458" selection-end="5458" vertical-scroll-proportion="0.6347607">
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="146" column="35" selection-start="5458" selection-end="5458" vertical-scroll-proportion="0.6347607" />
       </provider>
     </entry>
   </component>
