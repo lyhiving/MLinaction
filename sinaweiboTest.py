@@ -59,6 +59,42 @@ class sinaweiboTest:
 		edges = snsg.get_edges(client, 3609326415433045)
 		snsg.generate_dot("data/weibo/demo", edges)
 
+	def getPOIbyPlacename(self):
+		"""
+		查询地名
+
+		"""
+		APP_KEY = "4150821454"
+		APP_SECRET = "8480193faebfbb17566427b4e8d2f773"
+		CALLBACK_URL = "http://127.0.0.1/library/Rcitylearning/doc/callback.html"
+		sw = sinaweiboClient()
+		client = sw.getClient(APP_KEY, APP_SECRET, CALLBACK_URL)
+		sw.getPOIFromPlacename(client, '理想国际')
+
+	def getPOIIDbyPoiname(self):
+		"""
+		查询地名
+
+		"""
+		APP_KEY = "4150821454"
+		APP_SECRET = "8480193faebfbb17566427b4e8d2f773"
+		CALLBACK_URL = "http://127.0.0.1/library/Rcitylearning/doc/callback.html"
+		sw = sinaweiboClient()
+		client = sw.getClient(APP_KEY, APP_SECRET, CALLBACK_URL)
+		sw.getPOIIDFromPoiname(client, '理想国际')
+
+	def getPoiInfo(self):
+		"""
+		查询地名
+
+		"""
+		APP_KEY = "4150821454"
+		APP_SECRET = "8480193faebfbb17566427b4e8d2f773"
+		CALLBACK_URL = "http://127.0.0.1/library/Rcitylearning/doc/callback.html"
+		sw = sinaweiboClient()
+		client = sw.getClient(APP_KEY, APP_SECRET, CALLBACK_URL)
+		sw.getPoiinfo(client, 'B2094654D16CABFE419E')
+
 
 if __name__ == "__main__":
 ## 确保提取出来的数据以utf-8格式进行存储
@@ -68,4 +104,7 @@ if __name__ == "__main__":
 	# sinaweibo.getMyselfPost()
 	# sinaweibo.updateMyWeibo()
 	# sinaweibo.getInfo()
-	sinaweibo.drawGraph()
+	# sinaweibo.drawGraph()
+	# sinaweibo.getPOIbyPlacename()
+	# sinaweibo.getPOIIDbyPoiname()
+	sinaweibo.getPoiInfo()

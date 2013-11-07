@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c56946a-0648-46c2-920a-afae2bbee770" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/sinaweiboClient.py" afterPath="$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/sinaweiboClient.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sinaweiboTest.py" afterPath="$PROJECT_DIR$/sinaweiboTest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MLinaction.iws" />
@@ -19,7 +21,7 @@
     <file path="/testSet.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383100199830" ignored="false" />
     <file path="/AdaBoost.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383614557044" ignored="false" />
     <file path="/README.md" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383298002261" ignored="false" />
-    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383786599167" ignored="false" />
+    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383786613745" ignored="false" />
     <file path="/Regression.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383638152509" ignored="false" />
     <file path="/KMean.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383185652923" ignored="false" />
     <file path="/SVD.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383377029445" ignored="false" />
@@ -50,10 +52,10 @@
     <file path="/SVDTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383638362213" ignored="false" />
     <file path="$PROJECT_DIR$/../PWeibo/initClient/token-record.log" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383730440685" ignored="false" />
     <file path="/sinaweibo.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383751140737" ignored="false" />
-    <file path="/sinaweiboTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383757764187" ignored="false" />
+    <file path="/sinaweiboTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383793033408" ignored="false" />
     <file path="$PROJECT_DIR$/../PWeibo/getMyComment.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383750445356" ignored="false" />
     <file path="/initclient.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383753324200" ignored="false" />
-    <file path="/sinaweiboClient.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383757845640" ignored="false" />
+    <file path="/sinaweiboClient.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383793128605" ignored="false" />
     <file path="$PROJECT_DIR$/hmgis/TextMining/PLSA.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383757930369" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +80,30 @@
     <favorites_list name="MLinaction" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="sinaweiboClient.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/sinaweiboClient.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="143" column="16" selection-start="4664" selection-end="4664" vertical-scroll-proportion="0.3611111">
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sinaweiboTest.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sinaweiboTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="95" column="0" selection-start="2739" selection-end="2739" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#24#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -116,7 +141,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="x" value="387" />
+    <option name="y" value="75" />
     <option name="width" value="1369" />
     <option name="height" value="788" />
   </component>
@@ -275,64 +301,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sinaweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hmgis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InfoRetrieval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sinaweibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -640,7 +608,11 @@
       <created>1383757939449</created>
       <updated>1383757939449</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="10.7第2次调整">
+      <created>1383786616754</created>
+      <updated>1383786616754</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -664,24 +636,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1369" height="788" extended-state="0" />
-    <editor active="false" />
+    <frame x="387" y="75" width="1369" height="788" extended-state="0" />
+    <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39434522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740742" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740742" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955405" sideWeight="0.54761904" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23204838" sideWeight="0.63244045" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16553289" sideWeight="0.6056548" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44940478" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20861678" sideWeight="0.6347305" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4491018" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1477438" sideWeight="0.27596438" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36755952" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36526945" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32743362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264095" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39434522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -730,7 +702,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.7第1次调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.7第2次调整" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -748,10 +720,18 @@
     <MESSAGE value="10.4第2次调整" />
     <MESSAGE value="10.5第1次调整" />
     <MESSAGE value="10.7第1次调整" />
+    <MESSAGE value="10.7第2次调整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="201" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/sinaweiboTest.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="205" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="206" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -797,7 +777,9 @@
     </entry>
     <entry file="file:///Library/Python/2.7/site-packages/weibo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="0" selection-start="5586" selection-end="5586" vertical-scroll-proportion="0.1721959" />
+        <state line="171" column="0" selection-start="5586" selection-end="5586" vertical-scroll-proportion="0.1721959">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/initClient/token-record.log">
@@ -833,12 +815,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sinaweiboTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="25" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.43324938" />
+        <state line="95" column="0" selection-start="2739" selection-end="2739" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/sinaweiboClient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="35" selection-start="5458" selection-end="5458" vertical-scroll-proportion="0.6347607" />
+        <state line="143" column="16" selection-start="4664" selection-end="4664" vertical-scroll-proportion="0.3611111">
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

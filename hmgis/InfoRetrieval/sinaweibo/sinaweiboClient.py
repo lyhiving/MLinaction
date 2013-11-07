@@ -112,6 +112,37 @@ class sinaweiboClient:
 		for st in searchResult.statuses:
 			print st["user"]["name"], '发出的信息', st["text"]
 
+	def getPOIFromPlacename(self, client, placename):
+		"""
+		查询地名
+		:param client:
+		:param placename:
+		"""
+		searchResult = client.location.pois.search.by_location.get(q=placename)
+		for poi in searchResult.pois:
+			print poi["name"] + "\t" + poi["province_name"] + "\t" + poi["city_name"] + "\t" + poi["address"] + "\t" + \
+			      poi["latitude"] + "\t" + poi["longitude"] + "\t" + str(poi["pid"])
+
+	def getPOIIDFromPoiname(self, client, poiname):
+		"""
+		从POI名查询其POIID
+		:param client:
+		:param poiname:
+		"""
+		searchResult = client.place.pois.search.get(keyword=poiname)
+		for poi in searchResult.pois:
+			print poi["title"] + "\t" + poi["poiid"] + "\t" + poi["lat"] + "\t" + poi["lon"]
+
+	def getPoiinfo(self, client, poiid):
+		"""
+		查询地名
+		:param client:
+		:param placename:
+		"""
+		poi = client.place.pois.show.get(poiid=poiid)
+		print poi["title"] + "\t" + poi["address"] + "\t" + poi["phone"] + "\t" + poi["extra"] + "\t" + \
+		      poi["lat"] + "\t" + poi["lon"]
+
 
 class snsGraph:
 	def get_edges(self, client, post_id):
