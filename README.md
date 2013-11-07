@@ -1,7 +1,7 @@
 MLinaction
 ==========
 
-《机器学习实践》的代码，包含了大量修改
+本代码本来是《机器学习实践》的学习代码，但包含了大量修改。
 
 本代码库是个人学习《Machine Learning in Action》一书过程中，根据书本代码和scikit-learn library的demo编写的
 ，基本上涵盖了原生代码和基于scikit代码。
@@ -13,6 +13,7 @@ Logistic回归分类;
 SVM支持向量机分类;
 AdaBoost分类;
 
+```javascript
 hmgis/
     TextMining/
         /parseFile
@@ -39,3 +40,4 @@ hmgis/
             /Bayesian
             /RSSBayesian
             /EmailClassifier
+```
