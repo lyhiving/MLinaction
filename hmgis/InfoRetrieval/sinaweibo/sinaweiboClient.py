@@ -149,6 +149,11 @@ class sinaweiboClient:
 		      poi["lat"] + "\t" + poi["lon"]
 
 	def getPoiTips(self, client, poiid):
+		"""
+		获得POI的点评信息
+		:param client:
+		:param poiid:
+		"""
 		tips = client.place.pois.tips.get(poiid=poiid)
 		print tips
 
