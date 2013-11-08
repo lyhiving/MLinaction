@@ -77,6 +77,11 @@ class sinaweiboClient:
 		my_info.close()
 
 	def updateWeibo(self, client):
+		"""
+		发微博
+		:param client:
+		:return:
+		"""
 		if not client:
 			return
 		#根据用户输入内容发微博
@@ -142,6 +147,10 @@ class sinaweiboClient:
 		poi = client.place.pois.show.get(poiid=poiid)
 		print poi["title"] + "\t" + poi["address"] + "\t" + poi["phone"] + "\t" + poi["extra"] + "\t" + \
 		      poi["lat"] + "\t" + poi["lon"]
+
+	def getPoiTips(self, client, poiid):
+		tips = client.place.pois.tips.get(poiid=poiid)
+		print tips
 
 
 class snsGraph:

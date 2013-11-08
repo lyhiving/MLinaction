@@ -95,6 +95,17 @@ class sinaweiboTest:
 		client = sw.getClient(APP_KEY, APP_SECRET, CALLBACK_URL)
 		sw.getPoiinfo(client, 'B2094654D16CABFE419E')
 
+	def getPoiTipsInfo(self):
+		"""
+
+		"""
+		APP_KEY = "4150821454"
+		APP_SECRET = "8480193faebfbb17566427b4e8d2f773"
+		CALLBACK_URL = "http://127.0.0.1/library/Rcitylearning/doc/callback.html"
+		sw = sinaweiboClient()
+		client = sw.getClient(APP_KEY, APP_SECRET, CALLBACK_URL)
+		sw.getPoiTips(client, 'B2094654D16CABFE419E')
+
 
 if __name__ == "__main__":
 ## 确保提取出来的数据以utf-8格式进行存储
@@ -107,4 +118,5 @@ if __name__ == "__main__":
 	# sinaweibo.drawGraph()
 	# sinaweibo.getPOIbyPlacename()
 	# sinaweibo.getPOIIDbyPoiname()
-	sinaweibo.getPoiInfo()
+	# sinaweibo.getPoiInfo()
+	sinaweibo.getPoiTipsInfo()
