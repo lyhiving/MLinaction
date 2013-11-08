@@ -7,12 +7,22 @@ MLinaction
 ，基本上涵盖了原生代码和基于scikit代码。
 目前涵盖范围：
 ```javascript
-KNN分类;
-Decision Tree分类;
-Bayersian分类;
-Logistic回归分类;
-SVM支持向量机分类;
-AdaBoost分类;
+分类：
+    KNN分类;
+    Decision Tree分类;
+    Bayersian分类;
+    Logistic回归分类;
+    SVM支持向量机分类;
+    AdaBoost分类;
+聚类：
+    KMeans
+文本挖掘：
+    LSI(LSA)
+    pLSA
+    Recommend（基于物品、特征性的推荐）
+信息获取：
+    SinaWeiboService
+    BaiduMapService
 ```
 ```javascript
 hmgis/
