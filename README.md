@@ -6,26 +6,13 @@ MLinaction
 本代码库是个人学习《Machine Learning in Action》一书过程中，根据书本代码和scikit-learn library的demo编写的
 ，基本上涵盖了原生代码和基于scikit代码。
 目前涵盖范围：
-```javascript
-分类功能：
-    KNN分类;
-    Decision Tree分类;
-    Bayersian分类;
-    Logistic回归分类;
-    SVM支持向量机分类;
-    AdaBoost分类;
-聚类功能：
-    KMeans聚类
-文本功能：
-    LSA（LSI）主题模型
-    pLSA主题模型
-    Recommend推荐系统（基于物品的推荐）
-信息检索功能：
-    新浪微博信息
-    百度地图信息检索
-```
+KNN分类;
+Decision Tree分类;
+Bayersian分类;
+Logistic回归分类;
+SVM支持向量机分类;
+AdaBoost分类;
 
-```javascript
 hmgis/
     TextMining/
         /parseFile
@@ -52,4 +39,3 @@ hmgis/
             /Bayesian
             /RSSBayesian
             /EmailClassifier
-```
