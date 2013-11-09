@@ -5,8 +5,15 @@ from hmgis.TextMining.LSA import *
 
 
 class LSATest:
+	def __init__(self):
+		self.STOP_WORDS_SET = []
+		self.PUNCTUATION = ''',:'!()&-?/.";'''
+
 	def simpleTest(self):
-		titles = [
+		"""
+		LSA最简单的例子，这里的文本数据都保存在一个list中
+		"""
+		docs = [
 			"The Neatest Little Guide to Stock Market Investing",
 			"Investing For Dummies, 4th Edition",
 			"The Little Book of Common Sense Investing: The Only Way to Guarantee Your Fair Share of Stock Market Returns",
@@ -17,14 +24,18 @@ class LSATest:
 			"Stock Investing For Dummies",
 			"Rich Dad's Advisors: The ABC's of Real Estate Investing: The Secrets of Finding Hidden Profits Most Investors Miss"]
 
-		stopwords = ['and', 'edition', 'for', 'in', 'little', 'of', 'the', 'to', 'a', '1', '2', '3', '4']
-		ignorechars = ''',:'!()&-'''
-		lsa = LSA(stopwords, ignorechars)
+		stopwordsfile = open('lib/stopwords.txt', "r")
+		for word in stopwordsfile: # a stop word in each line
+			word = word.replace("\n", '')
+			word = word.replace("\r\n", '')
+			self.STOP_WORDS_SET.append(word)
 
-		for t in titles:
-			lsa.parse(t)
-		## 生成一个DTM矩阵
-		lsa.build()
+		lsa = LSA(self.STOP_WORDS_SET, self.PUNCTUATION)
+		## 解析英文文档，注意这里9个文档中每个文档都是一个字符串
+		for t in docs:
+			lsa.parseEnglish(t)
+		## 生成一个TDM矩阵,行为词汇，列为文档
+		lsa.buildTDM()
 		## 输出词频权重
 		lsa.printA()
 		lsa.TFIDF()
@@ -54,9 +65,10 @@ class LSATest:
 		w1 = asarray(newMat[3, :])[0]
 		w2 = asarray(newMat[6, :])[0]
 		print spearmanr(w1, w2)[0]
+		print "对比w1和w2的前后spearmanr系数，可知其相关性提升了"
 
-	## 中文处理
-	def corpusTest(self):
+	## 这个的语料库为英文，保存在一个文件中，每行为一个
+	def englishCorpusTest(self):
 		courses = [line.strip() for line in file('data/LSA/coursera_corpus')]
 		courses_name = [course.split('\t')[0] for course in courses]
 		print courses_name[0:2]
@@ -66,8 +78,8 @@ class LSATest:
 		lsa = LSA(stopwords, ignorechars)
 
 		for t in courses_name:
-			lsa.parse(t)
-		lsa.build2()
+			lsa.parseEnglish(t)
+		lsa.buildTDM()
 		## 输出词频权重
 		lsa.printA()
 		lsa.TFIDF()
@@ -87,6 +99,7 @@ class LSATest:
 			a[i] = s[i]
 			i = i + 1
 
+	## 中文处理，所有的中文语料库都进行了分词整理，并保存在一个文件中，每行数据表示一个文档
 	def weiboTest(self):
 		# 以下三行代码是将数据从csv转化为txt
 		#from hmgis.TextMining.TextTools.parseFile import *
@@ -96,7 +109,7 @@ class LSATest:
 		lsa = LSA([], [])
 		lsa.parseChinese('data/LSA/wb_clean.txt')
 
-		lsa.build2()
+		lsa.buildTDM()
 		lsa.printA()
 		lsa.TFIDF()
 		lsa.printA()

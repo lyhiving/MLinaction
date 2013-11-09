@@ -23,6 +23,7 @@ from hmgis.Test.SVDTest import *
 from hmgis.Test.RecommendTest import *
 from hmgis.Test.LSATest import *
 from hmgis.Test.GensimTest.SimpledocTest import *
+from hmgis.Test.pLSATest import *
 
 
 class ClassifierTest:
@@ -137,7 +138,7 @@ class ClassifierTest:
 	def LSATest(self):
 		lsa = LSATest()
 		# lsa.simpleTest()
-		#lsa.corpusTest()
+		# lsa.englishCorpusTest()
 		lsa.weiboTest()
 
 	## Gensim库的测试
@@ -145,8 +146,13 @@ class ClassifierTest:
 		gen = GensimTest()
 		# gen.simple()
 		# gen.simple2()
-		# gen.GIS3SNewsTopic()
-		gen.weiboTopic()
+		gen.GIS3SNewsTopic()
+
+	# gen.weiboTopic()
+
+	def pLSATest(self):
+		plsa = pLSATest()
+		plsa.plsaTest()
 
 
 if __name__ == "__main__":
@@ -165,5 +171,11 @@ if __name__ == "__main__":
 	#classifier.kmeansTest()
 	#classifier.SVDTest()
 	# classifier.recommendTest()
-	classifier.LSATest()
-	#classifier.GensimTest()
+	# classifier.LSATest()
+	# classifier.GensimTest()
+	# classifier.pLSATest()
+	# classifier.pLSATest()
+	a = [('7', 0), ('9', 0), ('8', 1), ('11', 2), ('3', 2), ('2', 2), ('5', 2), ('4', 3), ('6', 3), ('10', 4),
+	     ('12', 4), ('1', 4), ('0', 4)]
+	for at in a:
+		print at
