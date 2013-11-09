@@ -2,54 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c56946a-0648-46c2-920a-afae2bbee770" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/plsa/texts/grimm_fairy_tales/briar_rose.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/test/briar_rose.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/texts/grimm_fairy_tales/briar_rose.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/plsa/texts/tech_blog_posts/codecademy_surges_to_200k_users.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/texts/tech_blog_posts/codecademy_surges_to_200k_users.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/plsa/texts/nyt/confessions_of_ex_moralist.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/texts/nyt/confessions_of_ex_moralist.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/document-topic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/plsa/texts/grimm_fairy_tales/dog_and_sparrow.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/test/dog_and_sparrow.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/texts/grimm_fairy_tales/dog_and_sparrow.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/plsa/texts/grimm_fairy_tales/fisherman_and_his_wife.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/test/fisherman_and_his_wife.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/texts/grimm_fairy_tales/fisherman_and_his_wife.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/plsa/texts/grimm_fairy_tales/golden_bird.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/texts/grimm_fairy_tales/golden_bird.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/plsa/texts/grimm_fairy_tales/hans_in_luck.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/texts/grimm_fairy_tales/hans_in_luck.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/plsa/texts/grimm_fairy_tales/jorinda_and_jorindel.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/texts/grimm_fairy_tales/jorinda_and_jorindel.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/main.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/plsa/texts/grimm_fairy_tales/old_sultan.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/texts/grimm_fairy_tales/old_sultan.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/Test/pLSATest.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/pip-log.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/plsa.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/plsa_multi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/stopwords.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/stopwords.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/stopwords_shortlist.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/stopwords_shortlist.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/plsa/texts/grimm_fairy_tales/straw_coal_and_bean.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/texts/grimm_fairy_tales/straw_coal_and_bean.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/topic-word.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/plsa/texts/grimm_fairy_tales/travelling_musicians.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/texts/grimm_fairy_tales/travelling_musicians.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/plsa/texts/grimm_fairy_tales/twelve_dancing_princesses.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/texts/grimm_fairy_tales/twelve_dancing_princesses.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/plsa/texts/tech_blog_posts/twitter_url_shortener_analytics.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/texts/tech_blog_posts/twitter_url_shortener_analytics.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/TextMining/pLSA/utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/TextMining/LSA.py" afterPath="$PROJECT_DIR$/hmgis/TextMining/LSA.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/Test/LSATest.py" afterPath="$PROJECT_DIR$/hmgis/Test/LSATest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classifierTest.py" afterPath="$PROJECT_DIR$/classifierTest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MLinaction.iws" />
@@ -67,7 +19,7 @@
     <file path="/testSet.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383100199830" ignored="false" />
     <file path="/AdaBoost.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383614557044" ignored="false" />
     <file path="/README.md" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383885851321" ignored="false" />
-    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383973802995" ignored="false" />
+    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383973807743" ignored="false" />
     <file path="/Regression.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383638152509" ignored="false" />
     <file path="/KMean.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383185652923" ignored="false" />
     <file path="/SVD.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383377029445" ignored="false" />
@@ -136,7 +88,7 @@
       <file leaf-file-name="plsa.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hmgis/TextMining/pLSA/plsa.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="250" column="0" selection-start="9024" selection-end="9024" vertical-scroll-proportion="0.0">
+            <state line="253" column="0" selection-start="9029" selection-end="9029" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -145,7 +97,7 @@
       <file leaf-file-name="classifierTest.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classifierTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="141" selection-start="4200" selection-end="4200" vertical-scroll-proportion="0.81191224">
+            <state line="178" column="39" selection-start="4207" selection-end="4207" vertical-scroll-proportion="0.8144654">
               <folding>
                 <element signature="e#243#253#0" expanded="true" />
               </folding>
@@ -743,7 +695,11 @@
       <created>1383885858445</created>
       <updated>1383885858445</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="10.7第3次调整">
+      <created>1383973816661</created>
+      <updated>1383973816661</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -770,11 +726,12 @@
     <frame x="22" y="22" width="1369" height="784" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39434522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740742" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740742" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955405" sideWeight="0.54761904" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23204838" sideWeight="0.6651652" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16477703" sideWeight="0.6651652" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16477703" sideWeight="0.6651652" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4834835" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1477438" sideWeight="0.27596438" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -784,7 +741,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243243" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39434522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6152695" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -860,7 +816,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/hmgis/TextMining/pLSA/plsa.py</url>
-          <line>250</line>
+          <line>253</line>
           <option name="timeStamp" value="269" />
         </line-breakpoint>
       </breakpoints>
@@ -950,14 +906,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/TextMining/pLSA/plsa.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="250" column="0" selection-start="9024" selection-end="9024" vertical-scroll-proportion="0.0">
+        <state line="253" column="0" selection-start="9029" selection-end="9029" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classifierTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="141" selection-start="4200" selection-end="4200" vertical-scroll-proportion="0.81191224">
+        <state line="178" column="39" selection-start="4207" selection-end="4207" vertical-scroll-proportion="0.8144654">
           <folding>
             <element signature="e#243#253#0" expanded="true" />
           </folding>
