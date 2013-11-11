@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c56946a-0648-46c2-920a-afae2bbee770" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService.py" afterPath="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MLinaction.iws" />
@@ -21,7 +21,7 @@
     <file path="/testSet.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383100199830" ignored="false" />
     <file path="/AdaBoost.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383614557044" ignored="false" />
     <file path="/README.md" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383885851321" ignored="false" />
-    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384009847522" ignored="false" />
+    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384182734211" ignored="false" />
     <file path="/Regression.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383638152509" ignored="false" />
     <file path="/KMean.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383185652923" ignored="false" />
     <file path="/SVD.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383377029445" ignored="false" />
@@ -63,7 +63,9 @@
     <file path="/utils.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383900123059" ignored="false" />
     <file path="/pLSATest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383924024506" ignored="false" />
     <file path="/plsa.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383966073057" ignored="false" />
-    <file path="/dianpingService.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384013529377" ignored="false" />
+    <file path="/dianpingService.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384177514416" ignored="false" />
+    <file path="/dianping.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384163490888" ignored="false" />
+    <file path="/dianpingService2.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384182439541" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,32 +90,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="plsa.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hmgis/TextMining/pLSA/plsa.py">
+      <file leaf-file-name="dianpingService2.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="252" column="60" selection-start="9028" selection-end="9028" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="classifierTest.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classifierTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="24" selection-start="3740" selection-end="3740" vertical-scroll-proportion="0.0">
+            <state line="85" column="29" selection-start="3655" selection-end="3655" vertical-scroll-proportion="0.7297297">
               <folding>
-                <element signature="e#243#253#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dianpingService.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="37" selection-start="1763" selection-end="1763" vertical-scroll-proportion="0.504717">
-              <folding>
-                <element signature="e#24#44#0" expanded="true" />
+                <element signature="e#24#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,9 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/sinaweiboTest.py" />
-        <option value="$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/sinaweiboClient.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/hmgis/TextMining/pLSA/__init__.py" />
         <option value="$PROJECT_DIR$/hmgis/TextMining/pLSA/document-topic.txt" />
         <option value="$PROJECT_DIR$/hmgis/TextMining/pLSA/topic-word.txt" />
@@ -152,15 +131,18 @@
         <option value="$PROJECT_DIR$/hmgis/TextMining/pLSA/plsa.py" />
         <option value="$PROJECT_DIR$/classifierTest.py" />
         <option value="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/__init__.py" />
+        <option value="$PROJECT_DIR$/data/dp/dp_comment_2401360.dat" />
+        <option value="$PROJECT_DIR$/dianping.py" />
         <option value="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService.py" />
+        <option value="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="202" />
-    <option name="y" value="42" />
+    <option name="x" value="74" />
+    <option name="y" value="40" />
     <option name="width" value="1369" />
-    <option name="height" value="784" />
+    <option name="height" value="780" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -330,15 +312,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hmgis" />
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MLinaction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MLinaction" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="InfoRetrieval" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="baidumap" />
+              <option name="myItemId" value="dp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -391,33 +383,14 @@
       <recent name="$PROJECT_DIR$/data/gensim" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping" />
       <recent name="$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo" />
       <recent name="$PROJECT_DIR$/hmgis/InfoRetrieval" />
       <recent name="$PROJECT_DIR$/hmgis/Test/GensimTest" />
       <recent name="$PROJECT_DIR$/hmgis/TextMining/TextTools" />
-      <recent name="$PROJECT_DIR$/hmgis/Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.dianpingService">
-    <configuration default="false" name="PLSA" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hmgis/TextMining" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MLinaction" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hmgis/TextMining/PLSA.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.dianpingService2">
     <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -500,6 +473,27 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="dianpingService2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MLinaction" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -560,19 +554,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.PLSA" />
-      <item index="1" class="java.lang.String" itemvalue="Python.main" />
-      <item index="2" class="java.lang.String" itemvalue="Python.DTM" />
-      <item index="3" class="java.lang.String" itemvalue="Python.classifierTest" />
-      <item index="4" class="java.lang.String" itemvalue="Python.dianpingService" />
+      <item index="0" class="java.lang.String" itemvalue="Python.main" />
+      <item index="1" class="java.lang.String" itemvalue="Python.DTM" />
+      <item index="2" class="java.lang.String" itemvalue="Python.classifierTest" />
+      <item index="3" class="java.lang.String" itemvalue="Python.dianpingService" />
+      <item index="4" class="java.lang.String" itemvalue="Python.dianpingService2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.dianpingService" />
-        <item index="1" class="java.lang.String" itemvalue="Python.classifierTest" />
-        <item index="2" class="java.lang.String" itemvalue="Python.DTM" />
-        <item index="3" class="java.lang.String" itemvalue="Python.main" />
-        <item index="4" class="java.lang.String" itemvalue="Python.PLSA" />
+        <item index="0" class="java.lang.String" itemvalue="Python.dianpingService2" />
+        <item index="1" class="java.lang.String" itemvalue="Python.dianpingService" />
+        <item index="2" class="java.lang.String" itemvalue="Python.classifierTest" />
+        <item index="3" class="java.lang.String" itemvalue="Python.DTM" />
+        <item index="4" class="java.lang.String" itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -692,7 +686,11 @@
       <created>1383979991200</created>
       <updated>1383979991200</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="10.7第3次调整">
+      <created>1384013970747</created>
+      <updated>1384013970747</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -716,18 +714,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="202" y="42" width="1369" height="784" extended-state="0" />
+    <frame x="74" y="40" width="1369" height="780" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740742" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740742" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.326284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.326284" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955405" sideWeight="0.54761904" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23204838" sideWeight="0.6651652" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16931216" sideWeight="0.66566265" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48343372" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23204838" sideWeight="0.6933535" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14965986" sideWeight="0.54531723" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5090909" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1477438" sideWeight="0.27596438" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33433735" sideWeight="0.50037795" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33433735" sideWeight="0.49962208" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45468277" sideWeight="0.49962208" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32743362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -806,51 +804,34 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="276" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="305" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hmgis/Test/LSATest.py">
+    <entry file="file://$PROJECT_DIR$/data/dp/dp_comment_9977702_梅龙镇(南塘老街店).dat">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="0" selection-start="3182" selection-end="3182" vertical-scroll-proportion="0.16356878" />
+        <state line="0" column="96" selection-start="0" selection-end="96" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/TextMining/LSA.py">
+    <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="16" selection-start="2543" selection-end="2543" vertical-scroll-proportion="0.51272726" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/plsa/texts/nyt/confessions_of_ex_moralist.txt">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/data/dp/dp_comment_9977702_梅龙镇(南塘老街店).dat">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/TextMining/pLSA/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="42" selection-start="530" selection-end="545" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/plsa/topic-word.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/plsa/document-topic.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/plsa/document-topic1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="35" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/Test/pLSATest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.0" />
+        <state line="1" column="44" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/Test/GensimTest/SimpledocTest.py">
@@ -858,55 +839,74 @@
         <state line="22" column="8" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/TextMining/pLSA/plsa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="252" column="60" selection-start="9028" selection-end="9028" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/TextMining/pLSA/pip-log.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/baidumap/baiduMap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="25" selection-end="58" vertical-scroll-proportion="-0.19025157" />
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="530" column="0" selection-start="17477" selection-end="17477" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/classifierTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="24" selection-start="3740" selection-end="3740" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#243#253#0" expanded="true" />
-          </folding>
+        <state line="164" column="24" selection-start="3740" selection-end="3740" vertical-scroll-proportion="0.5741325" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hmgis/TextMining/pLSA/plsa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="237" column="31" selection-start="8420" selection-end="8443" vertical-scroll-proportion="10.186247" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapinfoTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="99" selection-start="2765" selection-end="2765" vertical-scroll-proportion="0.36555892">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/__init__.py">
+    <entry file="file://$PROJECT_DIR$/data/dp/dp_comment_9977702_梅龙镇(南塘老街店).dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="96" selection-start="0" selection-end="96" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sinaweiboTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="0" selection-start="3167" selection-end="3212" vertical-scroll-proportion="4.9099097">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dp/dp_comment_2408020_必胜客(清河店).dat">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/baidumap/baiduMap.py">
+    <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="25" selection-end="58" vertical-scroll-proportion="-0.19025157">
+        <state line="85" column="29" selection-start="3655" selection-end="3655" vertical-scroll-proportion="0.7297297">
           <folding>
-            <element signature="e#25#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="530" column="0" selection-start="17477" selection-end="17477" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="37" selection-start="1763" selection-end="1763" vertical-scroll-proportion="0.504717">
-          <folding>
-            <element signature="e#24#44#0" expanded="true" />
+            <element signature="e#24#34#0" expanded="true" />
           </folding>
         </state>
       </provider>

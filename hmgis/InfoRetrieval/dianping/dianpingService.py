@@ -70,8 +70,29 @@ class dianpingService:
 		for business in res["businesses"]:
 			print str(business["business_id"]) + '\t' + business["name"] + '\t' + business["branch_name"]
 
+	def getSingleBusiness(self, businessId):
+		"""
+
+		:param businessId:
+		:return:
+		"""
+		paramSet = []
+		paramSet.append(("format", "json"))
+		paramSet.append(("business_id", businessId))
+		url = 'http://api.dianping.com/v1/business/get_single_business'
+		url = self.createRequestUrl(paramSet, url)
+		# print url
+		req = urlopen(url).read()
+		# print req
+		res = json.loads(req)
+		for business in res["businesses"]:
+			return '"location":{"business_id":' + str(business["business_id"]) + ',"latitude":' + str(
+				business["latitude"]) + ',"longitude":' + \
+			       str(business["longitude"]) + ',"avg_rating":' + str(business['avg_rating']) + '}'
+
 
 if __name__ == "__main__":
 	dianping = dianpingService('60599581', '23eaa6c4d310401b8fd788074a740873')
 	dianping.get_categories_with_businesses()
 	dianping.find_businesses()
+	print dianping.getSingleBusiness('6586193')
