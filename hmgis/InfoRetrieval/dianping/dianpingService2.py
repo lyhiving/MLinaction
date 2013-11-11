@@ -58,9 +58,9 @@ class dianpingService2:
 
 		## 类型信息
 		typeinfo = soup.find(name="div", attrs={"class": "breadcrumb"}).findAll('span', {'class': 'bread-name'})
-		type_info = ',"BusinessType":"' + typeinfo[0].text + '","Region2":"' + typeinfo[1].text + '","SubRegion":"' +
-		            typeinfo[2].text + \
-		            '","SalesType":"' + typeinfo[-1].text + '"'
+		type_info = ',"BusinessType":"' + typeinfo[0].text + '","Region2":"' + typeinfo[1].text + '","SubRegion":"' + \
+		            typeinfo[2].text + '","SalesType":"' + typeinfo[-1].text + '"'
+
 		shopinfo += type_info
 		# f.write(shopinfo)
 
