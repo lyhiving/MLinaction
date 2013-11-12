@@ -93,3 +93,35 @@ if __name__ == "__main__":
 	sys.setdefaultencoding('utf-8')
 	dp = dianpingService2()
 	dp.parseDianPing('2401360')
+	## 输出结果
+	# {
+	# "location": {
+	#    "business_id": 2408020,
+	#    "latitude": 40.03254,
+	#    "longitude": 116.34711,
+	#    "avg_rating": 3.5
+	# },
+	# "Stars": {
+	#    "All": 89,
+	#    "5s": 13,
+	#    "4s": 33,
+	#    "3s": 24,
+	#    "2s": 8,
+	#    "1s": 11
+	# },
+	# "Region": "海淀区",
+	# "BusinessName": "必胜客(清河店)",
+	# "Address": "清河一街60号清泽酒店底商(清河站东)",
+	# "tel": "010-62992767",
+	# "BusinessType": "北京餐厅",
+	# "Region2": "海淀区",
+	# "SubRegion": "清河",
+	# "SalesType": "比萨",
+	# "comments": {
+	#    "comments_count": 159,
+	#    "items": [
+	#        "烂到家了，谁去谁倒霉呀！卫生，口味，服务，没有一样像样的，居然还有人去吃！",
+	#        "卫生条件真够差的，杯子都没洗干净就敢给顾客用，服务很一般。。味道更一般。不会再来了。"
+	#        ]
+	#     }
+	# }
