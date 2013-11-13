@@ -86,9 +86,9 @@ class dianpingService:
 		# print req
 		res = json.loads(req)
 		for business in res["businesses"]:
-			return '"location":{"business_id":' + str(business["business_id"]) + ',"latitude":' + str(
-				business["latitude"]) + ',"longitude":' + \
-			       str(business["longitude"]) + ',"avg_rating":' + str(business['avg_rating']) + '}'
+			return '"business_id":' + str(business["business_id"]) + ',"lat":' + str(
+				business["latitude"]) + ',"lng":' + \
+			       str(business["longitude"]) + ',"avg_rating":' + str(business['avg_rating'])
 
 
 if __name__ == "__main__":

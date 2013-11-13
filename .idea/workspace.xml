@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c56946a-0648-46c2-920a-afae2bbee770" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService.py" afterPath="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py" afterPath="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -20,7 +21,7 @@
     <file path="/testSet.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383100199830" ignored="false" />
     <file path="/AdaBoost.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383614557044" ignored="false" />
     <file path="/README.md" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383885851321" ignored="false" />
-    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384225952633" ignored="false" />
+    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384302819637" ignored="false" />
     <file path="/Regression.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383638152509" ignored="false" />
     <file path="/KMean.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383185652923" ignored="false" />
     <file path="/SVD.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383377029445" ignored="false" />
@@ -62,9 +63,16 @@
     <file path="/utils.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383900123059" ignored="false" />
     <file path="/pLSATest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383924024506" ignored="false" />
     <file path="/plsa.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383966073057" ignored="false" />
-    <file path="/dianpingService.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384177514416" ignored="false" />
+    <file path="/dianpingService.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384264562171" ignored="false" />
     <file path="/dianping.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384163490888" ignored="false" />
-    <file path="/dianpingService2.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384226162272" ignored="false" />
+    <file path="/dianpingService2.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384304988372" ignored="false" />
+    <file path="$PROJECT_DIR$/../LeafletMap/Dianping/default.html" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384266852247" ignored="false" />
+    <file path="$PROJECT_DIR$/../LeafletMap/Dianping/dp.dat" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384266295612" ignored="false" />
+    <file path="/dp.dat" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384265559187" ignored="false" />
+    <file path="/default.html" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384244698547" ignored="false" />
+    <file path="/LoadPointMap1.js" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384262605886" ignored="false" />
+    <file path="$PROJECT_DIR$/../LeafletMap/Dianping/LoadPointMap1.js" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384264965417" ignored="false" />
+    <file path="$PROJECT_DIR$/../LeafletMap/default.html" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384266656768" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,18 +100,7 @@
       <file leaf-file-name="dianpingService2.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="11" selection-start="4133" selection-end="4133" vertical-scroll-proportion="0.12460568">
-              <folding>
-                <element signature="e#24#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dp_comment_2408020_必胜客(清河店).dat" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/dp/dp_comment_2408020_必胜客(清河店).dat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="19465" vertical-scroll-proportion="0.0">
+            <state line="124" column="27" selection-start="5345" selection-end="5345" vertical-scroll-proportion="0.5689655">
               <folding />
             </state>
           </provider>
@@ -127,7 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/hmgis/TextMining/pLSA/__init__.py" />
         <option value="$PROJECT_DIR$/hmgis/TextMining/pLSA/document-topic.txt" />
         <option value="$PROJECT_DIR$/hmgis/TextMining/pLSA/topic-word.txt" />
         <option value="$PROJECT_DIR$/hmgis/TextMining/pLSA/main.py" />
@@ -142,13 +138,14 @@
         <option value="$PROJECT_DIR$/data/dp/dp_comment_2401360.dat" />
         <option value="$PROJECT_DIR$/dianping.py" />
         <option value="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService.py" />
+        <option value="$PROJECT_DIR$/data/dp/dp_comment_.dat" />
         <option value="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="71" />
-    <option name="y" value="30" />
+    <option name="x" value="66" />
+    <option name="y" value="28" />
     <option name="width" value="1369" />
     <option name="height" value="780" />
   </component>
@@ -194,46 +191,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="MLinaction">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="MLinaction">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="data/knn">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="All">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="MLinaction">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -344,6 +301,46 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MLinaction">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MLinaction">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="data/knn">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="All">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MLinaction">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -360,16 +357,16 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="164" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="945" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="949" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="945" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="161" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="157" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -391,11 +388,11 @@
       <recent name="$PROJECT_DIR$/data/gensim" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/dp" />
       <recent name="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping" />
       <recent name="$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo" />
       <recent name="$PROJECT_DIR$/hmgis/InfoRetrieval" />
       <recent name="$PROJECT_DIR$/hmgis/Test/GensimTest" />
-      <recent name="$PROJECT_DIR$/hmgis/TextMining/TextTools" />
     </key>
   </component>
   <component name="RunManager" selected="Python.dianpingService2">
@@ -706,7 +703,11 @@
       <created>1384183026843</created>
       <updated>1384183026843</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="10.12第1次调整">
+      <created>1384226218088</created>
+      <updated>1384226218088</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -730,26 +731,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="30" width="1369" height="780" extended-state="0" />
+    <frame x="66" y="28" width="1369" height="780" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.326284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.326284" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32326284" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955405" sideWeight="0.54761904" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23204838" sideWeight="0.6933535" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15192744" sideWeight="0.5439394" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5090909" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17913832" sideWeight="0.48036253" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5090634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1477438" sideWeight="0.27596438" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33433735" sideWeight="0.50037795" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45606062" sideWeight="0.49962208" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51963747" sideWeight="0.49962208" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32743362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32379517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39434522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6152695" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -797,7 +798,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.7第3次调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.12第1次调整" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -817,33 +818,37 @@
     <MESSAGE value="10.7第1次调整" />
     <MESSAGE value="10.7第2次调整" />
     <MESSAGE value="10.7第3次调整" />
+    <MESSAGE value="10.12第1次调整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="305" />
+      <option name="time" value="309" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/dp/dp_comment_9977702_梅龙镇(南塘老街店).dat">
+    <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="96" selection-start="0" selection-end="96" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dp/dp_comment_.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="124059" vertical-scroll-proportion="0.0" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dp/dp_comment_9977702_梅龙镇(南塘老街店).dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="44" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/Test/GensimTest/SimpledocTest.py">
@@ -886,34 +891,38 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="99" selection-start="2765" selection-end="2765" vertical-scroll-proportion="0.36555892" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dp/dp_comment_9977702_梅龙镇(南塘老街店).dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="96" selection-start="0" selection-end="96" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sinaweiboTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="111" column="0" selection-start="3167" selection-end="3212" vertical-scroll-proportion="4.9099097" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/dp/dp_comment_2408020_必胜客(清河店).dat">
+    <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="19465" vertical-scroll-proportion="0.0">
+        <state line="90" column="95" selection-start="2744" selection-end="2744" vertical-scroll-proportion="0.692429" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dp/dp_comment_.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="124059" vertical-scroll-proportion="0.0" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dp/dp_shops_.dat">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="11" selection-start="4133" selection-end="4133" vertical-scroll-proportion="0.12460568">
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-          </folding>
+        <state line="124" column="27" selection-start="5345" selection-end="5345" vertical-scroll-proportion="0.5689655">
+          <folding />
         </state>
       </provider>
     </entry>
