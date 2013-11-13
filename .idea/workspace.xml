@@ -20,7 +20,7 @@
     <file path="/testSet.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383100199830" ignored="false" />
     <file path="/AdaBoost.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383614557044" ignored="false" />
     <file path="/README.md" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383885851321" ignored="false" />
-    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384322407368" ignored="false" />
+    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384330623327" ignored="false" />
     <file path="/Regression.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383638152509" ignored="false" />
     <file path="/KMean.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383185652923" ignored="false" />
     <file path="/SVD.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383377029445" ignored="false" />
@@ -64,7 +64,7 @@
     <file path="/plsa.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383966073057" ignored="false" />
     <file path="/dianpingService.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384264562171" ignored="false" />
     <file path="/dianping.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384163490888" ignored="false" />
-    <file path="/dianpingService2.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384330547070" ignored="false" />
+    <file path="/dianpingService2.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384333110290" ignored="false" />
     <file path="$PROJECT_DIR$/../LeafletMap/Dianping/default.html" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384266852247" ignored="false" />
     <file path="$PROJECT_DIR$/../LeafletMap/Dianping/dp.dat" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384266295612" ignored="false" />
     <file path="/dp.dat" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384265559187" ignored="false" />
@@ -99,9 +99,9 @@
       <file leaf-file-name="dianpingService2.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="86" selection-start="5879" selection-end="5879" vertical-scroll-proportion="0.41044775">
+            <state line="171" column="19" selection-start="8350" selection-end="8350" vertical-scroll-proportion="0.705">
               <folding>
-                <element signature="e#1440#5408#0" expanded="false" />
+                <element signature="e#24#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,8 +145,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="124" />
-    <option name="y" value="22" />
+    <option name="x" value="44" />
+    <option name="y" value="30" />
     <option name="width" value="1369" />
     <option name="height" value="780" />
   </component>
@@ -712,7 +712,11 @@
       <created>1384305011212</created>
       <updated>1384305011212</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="10.12第1次调整">
+      <created>1384330627275</created>
+      <updated>1384330627275</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -736,24 +740,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="124" y="22" width="1369" height="780" extended-state="0" />
+    <frame x="44" y="30" width="1369" height="780" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39434522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.326284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.326284" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32175228" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955405" sideWeight="0.54761904" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23204838" sideWeight="0.6933535" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19123206" sideWeight="0.6495468" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19123206" sideWeight="0.6484848" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5090634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1477438" sideWeight="0.27596438" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33433735" sideWeight="0.50037795" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35045317" sideWeight="0.49962208" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35151514" sideWeight="0.49962208" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32743362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39434522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6152695" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -938,9 +942,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="86" selection-start="5879" selection-end="5879" vertical-scroll-proportion="0.41044775">
+        <state line="171" column="19" selection-start="8350" selection-end="8350" vertical-scroll-proportion="0.705">
           <folding>
-            <element signature="e#1440#5408#0" expanded="false" />
+            <element signature="e#24#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
