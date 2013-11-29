@@ -85,10 +85,13 @@ class dianpingService:
 		req = urlopen(url).read()
 		# print req
 		res = json.loads(req)
-		for business in res["businesses"]:
-			return '"business_id":' + str(business["business_id"]) + ',"lat":' + str(
-				business["latitude"]) + ',"lng":' + \
-			       str(business["longitude"]) + ',"avg_rating":' + str(business['avg_rating'])
+		if len(res["businesses"]) == 0:
+			return ''
+		else:
+			for business in res["businesses"]:
+				return '"business_id":' + str(business["business_id"]) + ',"lat":' + str(
+					business["latitude"]) + ',"lng":' + \
+				       str(business["longitude"]) + ',"avg_rating":' + str(business['avg_rating'])
 
 
 if __name__ == "__main__":
