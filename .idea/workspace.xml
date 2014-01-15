@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c56946a-0648-46c2-920a-afae2bbee770" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/collectData_V4.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/dp/JSON/dp_shops_生活设施.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/dp/JSON/dp_shops_美食.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonTest.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/dp/score.csv" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/initClient/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/initClient/initclient.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/initClient/token-record.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/initClient/util.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/sinaweiboClient.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sinaweiboTest.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mapinfoTest.py" afterPath="$PROJECT_DIR$/mapserviceTest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService.py" afterPath="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py" afterPath="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/a.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/jibt.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vagrant.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/collectData_V4.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/baidumap/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/baidumap/baiduMap.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mapserviceTest.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MLinaction.iws" />
@@ -24,8 +20,8 @@
     <file path="/KNN.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383614880562" ignored="false" />
     <file path="/DecisionTree.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383296674460" ignored="false" />
     <file path="/Bayesian.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383615069788" ignored="false" />
-    <file path="/test.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384418767281" ignored="false" />
-    <file path="/userdict" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385700495054" ignored="false" />
+    <file path="/test.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1388829136892" ignored="false" />
+    <file path="/userdict" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385911261101" ignored="false" />
     <file path="/a.dummy" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385706610312" ignored="false" />
     <file path="/RSSClassifier.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383141754459" ignored="false" />
     <file path="/Logistic.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383615735278" ignored="false" />
@@ -34,7 +30,7 @@
     <file path="/testSet.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383100199830" ignored="false" />
     <file path="/AdaBoost.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383614557044" ignored="false" />
     <file path="/README.md" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385459586543" ignored="false" />
-    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385736044295" ignored="false" />
+    <file path="/Dummy.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389790675692" ignored="false" />
     <file path="/Regression.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383638152509" ignored="false" />
     <file path="/KMean.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383185652923" ignored="false" />
     <file path="/SVD.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383377029445" ignored="false" />
@@ -58,7 +54,7 @@
     <file path="/Topic3S.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383447364924" ignored="false" />
     <file path="/SimpledocTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383449163794" ignored="false" />
     <file path="/Python Console" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383556829565" ignored="false" />
-    <file path="/a.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384433776057" ignored="false" />
+    <file path="/a.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389778912735" ignored="false" />
     <file path="/start_script.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384433781048" ignored="false" />
     <file path="/getRSSInfo.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383576397849" ignored="false" />
     <file path="/downloadFile.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383637915404" ignored="false" />
@@ -69,16 +65,16 @@
     <file path="$PROJECT_DIR$/../PWeibo/getMyComment.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383750445356" ignored="false" />
     <file path="/initclient.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383753324200" ignored="false" />
     <file path="/sinaweiboClient.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385712933763" ignored="false" />
-    <file path="/baiduMap.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383805118710" ignored="false" />
+    <file path="/baiduMap.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389779637581" ignored="false" />
     <file path="/mapinfoTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384435071186" ignored="false" />
-    <file path="/main.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383887863339" ignored="false" />
+    <file path="/main.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385737118163" ignored="false" />
     <file path="/DTM.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383913441366" ignored="false" />
     <file path="/utils.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383900123059" ignored="false" />
-    <file path="/pLSATest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383924024506" ignored="false" />
-    <file path="/plsa.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1383966073057" ignored="false" />
+    <file path="/pLSATest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385739566211" ignored="false" />
+    <file path="/plsa.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385739518841" ignored="false" />
     <file path="/dianpingService.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384409835640" ignored="false" />
     <file path="/dianping.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384163490888" ignored="false" />
-    <file path="/dianpingService2.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384747741600" ignored="false" />
+    <file path="/dianpingService2.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389790012850" ignored="false" />
     <file path="$PROJECT_DIR$/../LeafletMap/Dianping/default.html" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384266852247" ignored="false" />
     <file path="$PROJECT_DIR$/../LeafletMap/Dianping/dp.dat" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384266295612" ignored="false" />
     <file path="/dp.dat" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1384265559187" ignored="false" />
@@ -108,15 +104,48 @@
     <file path="$PROJECT_DIR$/../TopicModels/ChnCourseraModel.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385702942566" ignored="false" />
     <file path="/ChnCourseraModel.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385702768273" ignored="false" />
     <file path="$PROJECT_DIR$/../TopicModels/data/3snews-seg" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385702175747" ignored="false" />
-    <file path="$PROJECT_DIR$/../TopicModels/util/userdict" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385700496346" ignored="false" />
+    <file path="$PROJECT_DIR$/../TopicModels/util/userdict" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385911262062" ignored="false" />
     <file path="$PROJECT_DIR$/../TopicModels/util/chinesestopwords.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385702135676" ignored="false" />
     <file path="$PROJECT_DIR$/../TopicModels/sinaweiboTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385712304512" ignored="false" />
     <file path="$PROJECT_DIR$/../TopicModels/sinaweibo/sinaweiboClient.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385712933763" ignored="false" />
     <file path="$PROJECT_DIR$/../TopicModels/data/weibo/jiangbt_post.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385713515748" ignored="false" />
     <file path="$PROJECT_DIR$/../TopicModels/README" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385713349356" ignored="false" />
-    <file path="/README" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385713349356" ignored="false" />
-    <file path="$PROJECT_DIR$/../TopicModels/ChnWeiboModel.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385717891365" ignored="false" />
-    <file path="/ChnWeiboModel.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385717873384" ignored="false" />
+    <file path="/README" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389790672179" ignored="false" />
+    <file path="$PROJECT_DIR$/../TopicModels/ChnWeiboModel.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385911385053" ignored="false" />
+    <file path="/ChnWeiboModel.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385911378161" ignored="false" />
+    <file path="$PROJECT_DIR$/../TopicModels/pLSATest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385739588511" ignored="false" />
+    <file path="$PROJECT_DIR$/../TopicModels/data/plsa/document-topic.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385738318565" ignored="false" />
+    <file path="$PROJECT_DIR$/../TopicModels/pLSA/main.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385737150909" ignored="false" />
+    <file path="$PROJECT_DIR$/../TopicModels/pLSA/plsa.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385739653691" ignored="false" />
+    <file path="$PROJECT_DIR$/../TopicModels/data/plsa/topic-word.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385738318565" ignored="false" />
+    <file path="/weibo.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389786507549" ignored="false" />
+    <file path="$PROJECT_DIR$/../TopicModels/weibo.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385907480885" ignored="false" />
+    <file path="$PROJECT_DIR$/../TopicModels/data/weibo.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385904299162" ignored="false" />
+    <file path="$PROJECT_DIR$/../TopicModels/data/weibo2.txt" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385907474305" ignored="false" />
+    <file path="$PROJECT_DIR$/../TopicModels/sinaweibo/initClient/initclient.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385908493027" ignored="false" />
+    <file path="$PROJECT_DIR$/../TopicModels/weiboParser.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385908532001" ignored="false" />
+    <file path="$PROJECT_DIR$/../TopicModels/data/my/placename" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385911462954" ignored="false" />
+    <file path="$PROJECT_DIR$/../TopicModels/data/my/mypost-seg" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1385911192228" ignored="false" />
+    <file path="/mapserviceTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1388367469571" ignored="false" />
+    <file path="/PostgreSQLTest.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389682211448" ignored="false" />
+    <file path="/a.js" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389778840073" ignored="false" />
+    <file path="/a.coffee" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389778907445" ignored="false" />
+    <file path="$PROJECT_DIR$/../GetWebData/getPostgresql.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389779246072" ignored="false" />
+    <file path="/getPostgresql.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389779242521" ignored="false" />
+    <file path="$PROJECT_DIR$/../GetWebData/README" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389790672179" ignored="false" />
+    <file path="$PROJECT_DIR$/../GetWebData/hmgis/__init__.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389779429743" ignored="false" />
+    <file path="$PROJECT_DIR$/../GetWebData/hmgis/baiduservice/__init__.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389779450688" ignored="false" />
+    <file path="$PROJECT_DIR$/../GetWebData/getBaiduInfo.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389780107188" ignored="false" />
+    <file path="/getBaiduInfo.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389780097433" ignored="false" />
+    <file path="$PROJECT_DIR$/../GetWebData/hmgis/baiduservice/baiduMap.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389779952494" ignored="false" />
+    <file path="$PROJECT_DIR$/../GetWebData/getWeibo.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389787586102" ignored="false" />
+    <file path="/getWeibo.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389787384636" ignored="false" />
+    <file path="$PROJECT_DIR$/../GetWebData/hmgis/dianpingservice/__init__.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389788273085" ignored="false" />
+    <file path="$PROJECT_DIR$/../GetWebData/hmgis/dianpingservice/dianpingService.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389788545755" ignored="false" />
+    <file path="$PROJECT_DIR$/../GetWebData/hmgis/dianpingservice/dianpingService2.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389790012850" ignored="false" />
+    <file path="$PROJECT_DIR$/../GetWebData/getDianping.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389788813827" ignored="false" />
+    <file path="/getDianping.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389788790803" ignored="false" />
+    <file path="$PROJECT_DIR$/../GetWebData/getYuYingCloud.py" changelist="5c56946a-0648-46c2-920a-afae2bbee770" time="1389790630559" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +169,17 @@
     <favorites_list name="MLinaction" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="pythonTest.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pythonTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="27" selection-start="2390" selection-end="2390" vertical-scroll-proportion="0.3697479">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -158,14 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/mapinfoTest.py" />
-        <option value="$PROJECT_DIR$/mapserviceTest.py" />
-        <option value="$PROJECT_DIR$/sinaweiboTest.py" />
-        <option value="$PROJECT_DIR$/data/dp/dp_shops_美食1.dat" />
-        <option value="$PROJECT_DIR$/data/dp/dp_shops_丽人1.dat" />
-        <option value="$PROJECT_DIR$/data/dp/dp_comments_亲子.dat" />
-        <option value="$PROJECT_DIR$/data/dp/dp_comment_All.dat" />
-        <option value="$PROJECT_DIR$/data/dp/dp_shops_美食.dat" />
         <option value="$PROJECT_DIR$/data/dp/dp_shops_丽人.dat" />
         <option value="$PROJECT_DIR$/data/dp/dp_shops_休闲娱乐.dat" />
         <option value="$PROJECT_DIR$/data/dp/dp_shops_生活设施.dat" />
@@ -174,12 +205,20 @@
         <option value="$PROJECT_DIR$/data/dp/dp_comments_美食.dat" />
         <option value="$PROJECT_DIR$/data/dp/score.csv" />
         <option value="$PROJECT_DIR$/pythonTest.py" />
+        <option value="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/weibo.py" />
+        <option value="$PROJECT_DIR$/mapserviceTest.py" />
+        <option value="$PROJECT_DIR$/hmgis/InfoRetrieval/baidumap/baiduMap.py" />
+        <option value="$PROJECT_DIR$/data/a.csv" />
+        <option value="$PROJECT_DIR$/chiangbt/__init__.py" />
+        <option value="$PROJECT_DIR$/chiangbt/test.py" />
+        <option value="$PROJECT_DIR$/PostgreSQLTest.py" />
+        <option value="$PROJECT_DIR$/weibo.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="13" />
-    <option name="y" value="22" />
+    <option name="x" value="183" />
+    <option name="y" value="47" />
     <option name="width" value="1427" />
     <option name="height" value="756" />
   </component>
@@ -193,7 +232,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>Buildout</id>
+            <id>General</id>
           </State>
         </selected-state>
       </profile-state>
@@ -301,42 +340,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hmgis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MLinaction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hmgis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InfoRetrieval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -351,7 +354,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="155" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.intentionPowerPack" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="164" />
@@ -386,36 +389,15 @@
       <recent name="$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data/dp/JSON" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/data/dp/JSON" />
       <recent name="$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo" />
       <recent name="$PROJECT_DIR$/data/dp" />
       <recent name="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.pythonTest">
-    <configuration default="false" name="dianpingService2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MLinaction" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService2.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test">
+    <configuration default="false" name="weibo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -428,7 +410,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MLinaction" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weibo.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -451,11 +433,34 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mapserviceTest.py" />
       <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="pythonTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chiangbt" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MLinaction" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chiangbt/test.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PostgreSQLTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -468,28 +473,26 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MLinaction" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonTest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PostgreSQLTest.py" />
       <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="collectData_V4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="dianpingService" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MLinaction" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/collectData_V4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hmgis/InfoRetrieval/dianping/dianpingService.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -555,19 +558,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.dianpingService2" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.mapserviceTest" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pythonTest" />
-      <item index="4" class="java.lang.String" itemvalue="Python.collectData_V4" />
+      <item index="0" class="java.lang.String" itemvalue="Python.weibo" />
+      <item index="1" class="java.lang.String" itemvalue="Python.mapserviceTest" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test" />
+      <item index="3" class="java.lang.String" itemvalue="Python.PostgreSQLTest" />
+      <item index="4" class="java.lang.String" itemvalue="Python.dianpingService" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.pythonTest" />
-        <item index="1" class="java.lang.String" itemvalue="Python.dianpingService2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.collectData_V4" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.dianpingService" />
+        <item index="2" class="java.lang.String" itemvalue="Python.weibo" />
         <item index="3" class="java.lang.String" itemvalue="Python.mapserviceTest" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.PostgreSQLTest" />
       </list>
     </recent_temporary>
   </component>
@@ -715,7 +718,11 @@
       <created>1384333241879</created>
       <updated>1384333241879</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="delete weibo api">
+      <created>1385736094900</created>
+      <updated>1385736094900</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -739,23 +746,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="13" y="22" width="1427" height="756" extended-state="0" />
+    <frame x="183" y="47" width="1427" height="756" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.326284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.326284" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955405" sideWeight="0.49093655" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23148148" sideWeight="0.6450151" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.217958" sideWeight="0.8663522" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38401255" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23099203" sideWeight="0.6450151" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2570601" sideWeight="0.6022013" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4811321" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1477438" sideWeight="0.27596438" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33433735" sideWeight="0.50037795" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4811321" sideWeight="0.49962208" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39779875" sideWeight="0.49962208" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32743362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1336478" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4465409" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39434522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6152695" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -806,7 +813,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.12第1次调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete weibo api" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -827,119 +834,89 @@
     <MESSAGE value="10.7第2次调整" />
     <MESSAGE value="10.7第3次调整" />
     <MESSAGE value="10.12第1次调整" />
+    <MESSAGE value="delete weibo api" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="363" />
+      <option name="time" value="372" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/dp/dp_comments_婚庆.dat">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="10.555555" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dp/dp_comments_汽车.dat">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="48.88889" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dp/dp_comments_酒店.dat">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="19" selection-start="12130" selection-end="12130" vertical-scroll-proportion="0.122486286" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dp/dp_comments_运动.dat">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.5776966" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dp/dp_comments_生活设施.dat">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="230.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dp/dp_comments_美食.dat">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="169" selection-start="21287" selection-end="21287" vertical-scroll-proportion="-21.31579" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dp/JSON/dp_shops_美食.dat">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="267" selection-end="267" vertical-scroll-proportion="-0.28301886" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mapserviceTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/collectData_V4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.95477384" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dp/score.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/TextMining/LSA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="55" selection-start="1157" selection-end="1204" vertical-scroll-proportion="-0.7704918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/Test/GensimTest/SimpledocTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="86" selection-start="5724" selection-end="5917" vertical-scroll-proportion="0.024590164" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hmgis/InfoRetrieval/sinaweibo/sinaweiboClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="190" selection-end="205" vertical-scroll-proportion="0.09836066" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classifierTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="30" selection-start="3587" selection-end="3587" vertical-scroll-proportion="3.9189188" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pythonTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="24" selection-start="2517" selection-end="2517" vertical-scroll-proportion="0.5728643" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sinaweiboTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="512" selection-end="512" vertical-scroll-proportion="0.39344263">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/classifierTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="25" selection-start="4035" selection-end="4035" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/plsa/topic-word.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/plsa/document-topic.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/stopwords.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-35.558937" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hmgis/Test/pLSATest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1238" selection-end="1238" vertical-scroll-proportion="1.7984791" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/a.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="372" column="79" selection-start="27111" selection-end="27111" vertical-scroll-proportion="0.9052632" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hmgis/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/ltpservice/LTML.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="0" selection-start="5084" selection-end="5084" vertical-scroll-proportion="0.024590164" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="27" selection-start="2390" selection-end="2390" vertical-scroll-proportion="0.3697479">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 
