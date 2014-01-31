@@ -27,7 +27,7 @@ from hmgis.Test.pLSATest import *
 
 
 class ClassifierTest:
-	## KNN距离分类测试
+	## KNN距离分类测试，KNN分类适合数值型分类
 	def knnTest(self):
 		knn = KNNTest()
 		## 最简单的KNN测试，判断一个点的分类情况
@@ -157,8 +157,8 @@ if __name__ == "__main__":
 	sys.getfilesystemencoding()
 
 	classifier = ClassifierTest()
-	classifier.knnTest()
-#classifier.dtTest()
+	# classifier.knnTest()
+	classifier.dtTest()
 # classifier.bayesianTest()
 # classifier.logisticTest()
 # classifier.svmTest()

@@ -8,8 +8,8 @@ MLinaction
 目前涵盖范围：
 ```javascript
 分类：
-    KNN分类;
-    Decision Tree分类;
+    KNN分类(适合数值型分类);
+    Decision Tree分类（适合标量型数据分类，但同样要进行数值化）;
     Bayersian分类;
     Logistic回归分类;
     SVM支持向量机分类;
@@ -41,8 +41,6 @@ hmgis/
                 /autoNorm       数据归一化，是进行可视化前的必要程序
                 /knnTest2       将数据文件中的数据进行分类
                 /knnTestScikit  SCIKIT的KNN例子
-                /img2vector     影像转化为矩阵
-                /handwritingClassTest   影像矩阵的分类
         /DecisionTree
             /DecisionTreeDemo
                 /createDataset  将标称数据转化为数值数据矩阵

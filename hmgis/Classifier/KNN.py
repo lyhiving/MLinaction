@@ -34,7 +34,7 @@ class KNNDemo:
 	def autoNorm(self, dataSet):
 		"""
 		归一化处理函数，以防止参数之间的值差距过大
-		使得所有制均在-1至1之间
+		使得矩阵所有行的所有值均在-1至1之间
 		:param dataSet:
 		:return:
 		"""

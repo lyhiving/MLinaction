@@ -19,7 +19,7 @@ class KNNTest:
 		"""
 		从filename文件获得数据
 		:param filename:
-		:return:
+		:return:数值数据及其类型
 		"""
 		fr = open(filename)
 		numberOfLines = len(fr.readlines())         #get the number of lines in the file
