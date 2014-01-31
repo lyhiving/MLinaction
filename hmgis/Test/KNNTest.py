@@ -1,12 +1,10 @@
 # _*_ coding: utf-8 _*_
-from os import listdir
 from sklearn.neighbors import KNeighborsClassifier
-
 from hmgis.Classifier.KNN import *
 
 
 class KNNTest:
-	def createDataSet(self):
+	def _createDataSet(self):
 		"""
 		返回一个数组
 		group为数据
@@ -17,7 +15,7 @@ class KNNTest:
 		labels = ['A', 'A', 'B', 'B']
 		return group, labels
 
-	def loadDataSetFromFile(self, filename):
+	def _loadDataSetFromFile(self, filename):
 		"""
 		从filename文件获得数据
 		:param filename:
@@ -37,12 +35,13 @@ class KNNTest:
 			index += 1
 		return returnMat, classLabelVector
 
+	##---------------------------------------
 	def knnTest(self):
 		"""
 		KNN测试
 		"""
 		knn = KNNDemo()
-		group, labels = self.createDataSet()
+		group, labels = self._createDataSet()
 		print "原生分类器,[0,1]的分类结果为", knn.predict([0, 1], group, labels, 3)
 		## scikit learn代码
 		neigh = KNeighborsClassifier(n_neighbors=3)
@@ -54,7 +53,7 @@ class KNNTest:
 		点的二维化
 		:param filename:
 		"""
-		datingDataMat, datingLabels = self.loadDataSetFromFile(filename)
+		datingDataMat, datingLabels = self._loadDataSetFromFile(filename)
 		knn = KNNDemo()
 		normMat, ranges, minVals = knn.autoNorm(datingDataMat)
 		knn.show2D(normMat, datingLabels)
@@ -64,7 +63,7 @@ class KNNTest:
 		点的三维化
 		:param filename:
 		"""
-		datingDataMat, datingLabels = self.loadDataSetFromFile(filename)
+		datingDataMat, datingLabels = self._loadDataSetFromFile(filename)
 		knn = KNNDemo()
 		normMat, ranges, minVals = knn.autoNorm(datingDataMat)
 		knn.show3D(normMat, datingLabels)
@@ -76,7 +75,7 @@ class KNNTest:
 		:param infile:
 		"""
 		hoRatio = 0.80      #hold out 20%
-		datingDataMat, datingLabels = self.loadDataSetFromFile(infile)       #load data setfrom file
+		datingDataMat, datingLabels = self._loadDataSetFromFile(infile)       #load data setfrom file
 		knn = KNNDemo()
 		## 归一化处理
 		normMat, ranges, minVals = knn.autoNorm(datingDataMat)
@@ -98,7 +97,7 @@ class KNNTest:
 		:param infile:
 		"""
 		hoRatio = 0.80      #hold out 10%
-		datingDataMat, datingLabels = self.loadDataSetFromFile(infile)       #load data setfrom file
+		datingDataMat, datingLabels = self._loadDataSetFromFile(infile)       #load data setfrom file
 		knn = KNNDemo()
 		normMat, ranges, minVals = knn.autoNorm(datingDataMat)
 		m = normMat.shape[0]
@@ -115,50 +114,3 @@ class KNNTest:
 			if (classifierResult != datingLabels[i]): errorCount += 1.0
 		print "SCIKIT分类总错误率为: %f" % (errorCount / float(numTestVecs))
 		print errorCount
-
-
-	def img2vector(self, filename):
-		"""
-
-		:param filename:
-		:return:
-		"""
-		returnVect = zeros((1, 1024))
-		fr = open(filename)
-		for i in range(32):
-			lineStr = fr.readline()
-			for j in range(32):
-				returnVect[0, 32 * i + j] = int(lineStr[j])
-		return returnVect
-
-	def handwritingClassTest(self):
-		"""
-
-		"""
-		hwLabels = []
-		trainingFileList = listdir('data/knn/trainingDigits')           #load the training set
-		m = len(trainingFileList)
-		trainingMat = zeros((m, 1024))
-		for i in range(m):
-			fileNameStr = trainingFileList[i]
-			fileStr = fileNameStr.split('.')[0]     #take off .txt
-			classNumStr = int(fileStr.split('_')[0])
-			hwLabels.append(classNumStr)
-			trainingMat[i, :] = self.img2vector('data/knn/trainingDigits/%s' % fileNameStr)
-
-		neigh = KNeighborsClassifier(n_neighbors=3)
-		neigh.fit(trainingMat, hwLabels)
-
-		testFileList = listdir('data/knn/testDigits')        #iterate through the test set
-		errorCount = 0.0
-		mTest = len(testFileList)
-		for i in range(mTest):
-			fileNameStr = testFileList[i]
-			fileStr = fileNameStr.split('.')[0]     #take off .txt
-			classNumStr = int(fileStr.split('_')[0])
-			vectorUnderTest = self.img2vector('data/knn/testDigits/%s' % fileNameStr)
-			classifierResult = neigh.predict(vectorUnderTest)
-			print "分类器结果: %d, 实际结果: %d" % (classifierResult, classNumStr)
-			if (classifierResult != classNumStr): errorCount += 1.0
-		print "\n总错误: %d" % errorCount
-		print "\n错误率: %f" % (errorCount / float(mTest))

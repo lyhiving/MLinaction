@@ -41,10 +41,6 @@ class ClassifierTest:
 		print '-----------------------'
 		## 使用scikit learn包中的KNN函数进行分类
 		knn.knnTestScikit('data/knn/datingTestSet2.txt')
-		## 测试笔迹
-		## 将一幅图像转化为一行数据后进行KNN分类
-		## 这种方法的最大问题是必须一次性加载数据到内存中，因此实际应用中并不适合
-		knn.handwritingClassTest()
 
 	## 决策树分类
 	def dtTest(self):
@@ -161,16 +157,16 @@ if __name__ == "__main__":
 	sys.getfilesystemencoding()
 
 	classifier = ClassifierTest()
-	# classifier.knnTest()
-	#classifier.dtTest()
-	# classifier.bayesianTest()
-	# classifier.logisticTest()
-	# classifier.svmTest()
-	# classifier.adaBoostTest()
-	# classifier.regressionTest()
-	#classifier.kmeansTest()
-	#classifier.SVDTest()
-	# classifier.recommendTest()
-	# classifier.LSATest()
-	# classifier.GensimTest()
-	classifier.pLSATest()
+	classifier.knnTest()
+#classifier.dtTest()
+# classifier.bayesianTest()
+# classifier.logisticTest()
+# classifier.svmTest()
+# classifier.adaBoostTest()
+# classifier.regressionTest()
+#classifier.kmeansTest()
+#classifier.SVDTest()
+# classifier.recommendTest()
+# classifier.LSATest()
+# classifier.GensimTest()
+# classifier.pLSATest()
